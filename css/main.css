@@ -698,6 +698,15 @@ h6 {
 	flex-wrap: wrap;
 }
 
+.skill-cards-container a img {
+	height: 200px;
+	width: 200px;
+}
+
+.mlsa img {
+	width: 220px !important;
+}
+
 /*Icons - Programming Languages & Frameworks */
 
 #skills .container .div-card .mysql {
@@ -1217,7 +1226,7 @@ footer .support ul li a:hover {
 	color: #3c97ff;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 	.navbar-collapse .nav-link {
 		background-color: transparent;
 		width: 70%;
@@ -1253,7 +1262,7 @@ footer .support ul li a:hover {
 	#skills .skill-cards-container {
 		padding: 10px 0px;
 		display: flex;
-		gap: 40px;
+		gap: 20px;
 		margin-top: 20px;
 		align-items: center;
 		justify-content: space-evenly;
@@ -1274,6 +1283,15 @@ footer .support ul li a:hover {
 
 	.btn-send-message {
 		width: 100%;
+	}
+
+	.mlsa img {
+		width: 160px !important;
+	}
+
+	.skill-cards-container a img {
+		height: 140px;
+		width: 140px;
 	}
 }
 @media (min-width: 768px) {
