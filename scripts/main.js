@@ -920,16 +920,6 @@ const projectData = [
     srcURL: "https://github.com/qaidjoharj53/Student-Management-System",
   },
   {
-    title: "Vibe Verdict",
-    subTitle:
-      "It is a sentiment analysis model which can classify the sentiment of a given text",
-    thumbnail: "../assets/images/thumbnails/vibeverdict.png",
-    description:
-      "It is a sentiment analysis model that can classify the sentiment of a given text. It is built using Python and the NLTK library.",
-    techStack: ["Stack"],
-    srcURL: "https://github.com/qaidjoharj53/VibeVerdict",
-  },
-  {
     title: "Rule Minds",
     subTitle:
       "It is Rule Based Chatbot which can answer questions based on the rules defined in the code",
