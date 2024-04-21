@@ -688,6 +688,16 @@ h6 {
 	margin-right: auto;
 }
 
+.skill-cards-container {
+	padding: 10px 0px;
+	display: flex;
+	gap: 50px;
+	margin-top: 30px;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
 /*Icons - Programming Languages & Frameworks */
 
 #skills .container .div-card .mysql {
