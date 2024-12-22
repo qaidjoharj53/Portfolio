@@ -613,7 +613,7 @@ h6 {
 #skills .skill-cards-container {
 	padding: 10px 0px;
 	display: flex;
-	gap: 40px;
+	gap: 50px;
 	margin-bottom: 80px;
 	margin-top: 30px;
 	align-items: center;
@@ -712,6 +712,9 @@ h6 {
 #skills .container .div-card .mysql {
 	background-image: url("../assets/images/icon/mysql.png");
 }
+#skills .container .div-card .mongodb {
+	background-image: url("../assets/images/icon/mongodb.png");
+}
 #skills .container .div-card .express-js {
 	background-image: url("../assets/images/icon/express-js.png");
 }
@@ -720,6 +723,9 @@ h6 {
 }
 #skills .container .div-card .node-js {
 	background-image: url("../assets/images/icon/node-js.png");
+}
+#skills .container .div-card .next-js {
+	background-image: url("../assets/images/icon/next-js.png");
 }
 #skills .container .div-card .html {
 	background-image: url("../assets/images/icon/html-5.png");
@@ -760,8 +766,29 @@ h6 {
 #skills .container .div-card .gcp {
 	background-image: url("../assets/images/icon/gcp.png");
 }
+#skills .container .div-card .aws {
+	background-image: url("../assets/images/icon/aws.png");
+}
+#skills .container .div-card .docker {
+	background-image: url("../assets/images/icon/docker.png");
+}
 #skills .container .div-card .jupyter {
 	background-image: url("../assets/images/icon/jupyter.png");
+}
+#skills .container .div-card .colab {
+	background-image: url("../assets/images/icon/colab.png");
+}
+#skills .container .div-card .postman {
+	background-image: url("../assets/images/icon/postman.png");
+}
+#skills .container .div-card .android-studio {
+	background-image: url("../assets/images/icon/android-studio.png");
+}
+#skills .container .div-card .jmeter {
+	background-image: url("../assets/images/icon/jmeter.png");
+}
+#skills .container .div-card .figma {
+	background-image: url("../assets/images/icon/figma.png");
 }
 #skills .container .div-card .chatgpt {
 	background-image: url("../assets/images/icon/chatgpt.png");
@@ -851,6 +878,25 @@ h6 {
 
 .timeline-content .school::before {
 	content: "\e56b";
+	position: relative;
+	color: #222222;
+	-webkit-text-stroke: 1px #3c97ff;
+	margin-right: 5px;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 800;
+}
+
+.timeline-content .job::before {
+	content: "\f0b1";
+	position: relative;
+	color: #222222;
+	margin-right: 5px;
+	-webkit-text-stroke: 1px #3c97ff;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 800;
+}
+.timeline-content .company::before {
+	content: "\f1ad";
 	position: relative;
 	color: #222222;
 	-webkit-text-stroke: 1px #3c97ff;
@@ -1262,7 +1308,7 @@ footer .support ul li a:hover {
 	#skills .skill-cards-container {
 		padding: 10px 0px;
 		display: flex;
-		gap: 20px;
+		gap: 40px;
 		margin-top: 20px;
 		align-items: center;
 		justify-content: space-evenly;
@@ -1303,7 +1349,7 @@ footer .support ul li a:hover {
 	.typing {
 		position: relative;
 		width: 100%;
-		height: 50px;
+		height: 120px;
 	}
 
 	.section-title::before {
@@ -1685,7 +1731,7 @@ footer .support ul li a:hover {
 	.typing {
 		position: relative;
 		width: 100%;
-		height: 120px;
+		height: 160px;
 	}
 
 	#intro {
@@ -1855,7 +1901,7 @@ footer .support ul li a:hover {
 	#skills .skill-cards-container {
 		padding: 10px 0px;
 		display: flex;
-		gap: 40px;
+		gap: 50px;
 		margin-top: 30px;
 		align-items: center;
 		justify-content: space-around;
@@ -1925,7 +1971,7 @@ footer .support ul li a:hover {
 
 	h1,
 	.typing-text {
-		font-size: 4rem;
+		font-size: 3.5rem;
 	}
 
 	#about .section-title::before {
