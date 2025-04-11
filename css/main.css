@@ -754,6 +754,9 @@ h6 {
 #skills .container .div-card .csharp {
 	background-image: url("../assets/images/icon/c-sharp.png");
 }
+#skills .container .div-card .flutter {
+	background-image: url("../assets/images/icon/flutter.svg");
+}
 
 /*Icons - Tools & Other Skills */
 
@@ -771,6 +774,21 @@ h6 {
 }
 #skills .container .div-card .docker {
 	background-image: url("../assets/images/icon/docker.png");
+}
+#skills .container .div-card .kubernetes {
+	background-image: url("../assets/images/icon/kubernetes.svg");
+}
+#skills .container .div-card .ansible {
+	background-image: url("../assets/images/icon/ansible.svg");
+}
+#skills .container .div-card .jenkins {
+	background-image: url("../assets/images/icon/jenkins.svg");
+}
+#skills .container .div-card .redhat {
+	background-image: url("../assets/images/icon/redhat.svg");
+}
+#skills .container .div-card .firebase {
+	background-image: url("../assets/images/icon/firebase.svg");
 }
 #skills .container .div-card .jupyter {
 	background-image: url("../assets/images/icon/jupyter.png");
