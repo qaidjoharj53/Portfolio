@@ -692,7 +692,7 @@ h6 {
 	padding: 10px 0px;
 	display: flex;
 	gap: 50px;
-	margin-top: 30px;
+	margin: 30px 0 30px 0;
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -805,9 +805,7 @@ h6 {
 #skills .container .div-card .jmeter {
 	background-image: url("../assets/images/icon/jmeter.png");
 }
-#skills .container .div-card .figma {
-	background-image: url("../assets/images/icon/figma.png");
-}
+
 #skills .container .div-card .chatgpt {
 	background-image: url("../assets/images/icon/chatgpt.png");
 }
