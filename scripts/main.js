@@ -961,8 +961,8 @@ function progressIndicator() {
 setTimeout(() => {
 	new Typewriter(".typing-text", {
 		strings: [
-			"Aspiring Software Engineer",
-			"Cloud Computing Enthusiast",
+			"Software Engineer",
+			"DevOps Enthusiast",
 			"AI/ML Explorer",
 			"DevSecOps Learner",
 			"Open Source Contributor",
@@ -1072,7 +1072,22 @@ const projectData = [
 		techStack: ["MongoDB", "Express", "React", "Node.js", "Flutter"],
 		srcURL: "https://github.com/Hogwarts-Hackademy",
 	},
-
+	{
+		title: "Kaun Banega Champion",
+		subTitle: "A Quiz App",
+		thumbnail: "../assets/images/thumbnails/kbc.png",
+		description:
+			"Kaun Banega Champion is a responsive quiz WebApp that allows users to test their knowledge on various topics. The webapp features MCQs, timer, scoring system, referral system, and a Leaderboard. It features 4-layered gameplay - Quiz Rounds, Super 30, real-time Rapid Fire and KBC live game with gold prizes.",
+		techStack: [
+			"MySQL",
+			"Express",
+			"React",
+			"Node.js",
+			"Socket.io",
+			"IIS Server",
+		],
+		srcURL: "https://kbc.udaipurtoloba.com",
+	},
 	{
 		title: "GovID Extractor",
 		subTitle: "Extracting data from government-issued documents",
