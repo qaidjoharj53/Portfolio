@@ -683,6 +683,50 @@
 						<div class="milestones">
 							<div class="timeline">
 								<ul>
+                                    <li>
+										<div class="timeline-content">
+											<h3 class="date">
+												September, 2025 - Present 
+											</h3>
+											<h2 class="title job">
+												Software Engineer
+											</h2>
+											<a
+												href="https://hrone.cloud/"
+												target="_blank">
+												<h3 class="sub-title company">
+													HROne
+												</h3>
+											</a>
+											<p class="description">
+                                                Contributing to the development of <a href="https://hrone.studio/" target="_blank"><strong>HROne Studio</strong></a>, building scalable backend systems using <strong>FastAPI</strong> and <strong>MongoDB aggregation pipelines</strong> for efficient data processing and performance optimization.
+                                                Developed <strong>end-to-end API key management system</strong>, enabling secure access and communication for external integrations.
+                                                Collaborated with cross-functional teams to ensure <strong>seamless API integration</strong> and system reliability.
+                                                Improved user experience by optimizing <strong>API key generation and access workflows</strong> for registered users.
+  
+										</div>
+									</li>
+                                    <li>
+										<div class="timeline-content">
+											<h3 class="date">
+												June - December, 2025 
+											</h3>
+											<h2 class="title job">
+												Software Developer Intern
+											</h2>
+											<a
+												href="https://infonza.com/"
+												target="_blank">
+												<h3 class="sub-title company">
+													Infonza Innovations
+												</h3>
+											</a>
+											<p class="description">
+                                                Contributed to the development and deployment of <strong>YuvaHire, a campus placement management platform</strong>, currently in testing phase. Built scalable backend services using <strong>Bun, Express, Prisma, PostgreSQL, and SSE</strong> with a <strong>TypeScript-based modular monolith architecture</strong>, integrated with a Next.js frontend (Redux).
+                                                Implemented containerized deployments using <strong>Docker</strong> and managed multi-platform hosting across <strong>GCP, Vercel and Render</strong>, leveraging <strong>Cloudflare R2</strong> for object storage and <strong>Cloudflare Workers</strong> for edge processing and performance optimization.
+											</p>
+										</div>
+									</li>
 									<li>
 										<div class="timeline-content">
 											<h3 class="date">
@@ -1008,18 +1052,7 @@
 									<div class="container">
 										<div class="copyright">
 											<p>
-												Copyright &copy; 2024 | All
-												rights reserved. Made with
-												<span id="heart-icon"
-													>&#10084;</span
-												>
-												by
-												<a
-													href="https://github.com/qaidjoharj53"
-													title="Official Website"
-													target="_blank"
-													>Qaidjohar Jukker</a
-												>
+												Copyright &copy; <span id="current-year"></span> Qaidjohar Jukker. All rights reserved.
 											</p>
 										</div>
 									</div>
@@ -1054,6 +1087,10 @@
 			<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 			<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 			<script src="/scripts/main.js"></script>
+			<script>
+				document.getElementById("current-year").textContent =
+					new Date().getFullYear();
+			</script>
 			<script>
 				AOS.init();
 			</script>
