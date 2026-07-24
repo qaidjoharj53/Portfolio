@@ -315,7 +315,7 @@ var communityWork = [
       "Cross-platform finance management mobile app built with React Native and Go backend for tracking member contributions/dues, logging donations, recording community expenses, and providing the committee with a real-time financial dashboard. Deployed on the organization's private secured IIS server.",
     impact: [{ number: "Real-time", label: "financial visibility" }],
     stack: ["React Native", "Go", "IIS Server"],
-    isDraft: true,
+    // isDraft: true,
   },
 ];
 
