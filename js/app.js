@@ -320,11 +320,11 @@ var communityWork = [
 ];
 
 var certificationsData = [
-  {
-    title: "MongoDB Associate Developer",
-    url: "https://www.mongodb.com/certification",
-    image: "assets/images/mongodb-dev.png",
-  },
+  //   {
+  //     title: "MongoDB Associate Developer",
+  //     url: "https://www.mongodb.com/certification",
+  //     image: "assets/images/mongodb-dev.png",
+  //   },
   {
     title: "RedHat Certified System Administrator",
     url: "https://www.credly.com/badges/fbdc9ea4-d645-44d4-9e36-c5f7b9f70dc8/public_url",
