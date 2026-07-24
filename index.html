@@ -1,1110 +1,656 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="title" content="Qaidjohar Jukker" />
-		<meta name="language" content="English" />
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		<meta
-			name="description"
-			content="Qaidjohar Jukker is a skilled Software Developer from India with extensive experience in full stack development." />
-		<meta
-			name="copyright"
-			content="© 2024 Qaidjohar Jukker - All Rights Reserved." />
-		<meta name="author" content="Qaidjohar Jukker" />
+    <title>Portfolio | Qaidjohar Jukker</title>
+    <meta
+      name="description"
+      content="Qaidjohar Jukker is a software engineer specializing in backend systems, API design, and cloud infrastructure. Based in India, open to relocation."
+    />
+    <meta name="author" content="Qaidjohar Jukker" />
+    <meta name="language" content="English" />
+    <meta
+      name="copyright"
+      content="© 2026 Qaidjohar Jukker - All Rights Reserved."
+    />
 
-		<meta property="og:title" content="Portfolio | Qaidjohar Jukker" />
-		<meta property="og:site_name" content="Portfolio | Qaidjohar Jukker" />
-		<meta property="og:url" content=https://www.qaidjoharj.me/ />
-		<meta
-			property="og:description"
-			content="Qaidjohar Jukker is a skilled Software Developer from India with extensive experience in full stack development." />
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content="/assets/images/homepage.png" />
+    <meta property="og:title" content="Qaidjohar Jukker — Software Engineer" />
+    <meta property="og:site_name" content="Qaidjohar Jukker" />
+    <meta property="og:url" content="https://qaidjohar.tech/" />
+    <meta
+      property="og:description"
+      content="Backend-leaning software engineer building scalable systems, APIs, and cloud infrastructure."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://qaidjohar.tech/assets/images/og-image.png?v=2"
+    />
 
-		<title>Portfolio | Qaidjohar Jukker</title>
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="assets/favicon/apple-touch-icon.png" />
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="assets/favicon/favicon-32x32.png" />
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="assets/favicon/favicon-16x16.png" />
-		<link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Qaidjohar Jukker — Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Backend-leaning software engineer building scalable systems, APIs, and cloud infrastructure."
+    />
+    <meta
+      name="twitter:image"
+      content="https://qaidjohar.tech/assets/images/og-image.png?v=2"
+    />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<script
-			defer
-			src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap"
-			rel="stylesheet" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-			crossorigin="anonymous" />
-		<link rel="stylesheet" href="https://use.typekit.net/rrg4put.css" />
-		<link
-			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-			rel="stylesheet" />
-		<link rel="stylesheet" href="css/main.css" />
-		<link rel="stylesheet" href="css/projects.css" />
-	</head>
-	<body id="to-top" class="noselect">
-		<nav class="navbar navbar-expand-lg fixed-top">
-			<div class="container">
-				<a class="nav-brand noselect" href="index.html">QJ</a>
-				<button class="navbar-toggler" type="button">
-					<div
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNav"
-						aria-controls="navbarNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-						id="nav-icon">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</button>
-				<div
-					class="collapse navbar-collapse collapse-bg"
-					id="navbarNav">
-					<ul class="navbar-links">
-						<li class="nav-card-item">
-							<a
-								class="nav-link js-scroll-trigger noselect"
-								onclick="toAbout()"
-								>About me</a
-							>
-						</li>
-						<li class="nav-card-item">
-							<a
-								class="nav-link js-scroll-trigger noselect"
-								onclick="toSkills()"
-								>Skills</a
-							>
-						</li>
-						<li class="nav-card-item">
-							<a
-								class="nav-link js-scroll-trigger noselect"
-								onclick="toProjects()"
-								>Projects</a
-							>
-						</li>
-						<li class="nav-card-item">
-							<a
-								class="nav-link js-scroll-trigger noselect"
-								onclick="toMilestones()"
-								>Milestones</a
-							>
-						</li>
-						<li class="nav-card-item">
-							<a
-								class="nav-link js-scroll-trigger noselect"
-								onclick="toContact()"
-								>Contact</a
-							>
-						</li>
-					</ul>
-					<a href="/assets/resume/resume.pdf" download
-						><button type="button" class="cv-download noselect">
-							<i class="fa-solid fa-cloud-arrow-down fa-lg"></i
-							>Resume
-						</button></a
-					>
-				</div>
-			</div>
-			<div class="scroll-progress-track">
-				<div id="progress-bar" class="scroll-progress-thumb"></div>
-			</div>
-		</nav>
-		<div class="loader">
-			<h6 class="loading-text"></h6>
-		</div>
-		<div class="page-content">
-			<main>
-				<!-- Intro -->
-				<section id="intro">
-					<div
-						class="container"
-						data-aos="fade-down"
-						data-aos-duration="1000">
-						<div class="text">
-							<h1>
-								Hi, I am<br />
-								<span class="blue my-name">Qaidjohar,</span>
-								<br />
-							</h1>
-							<div class="typing">
-								<h2>
-									<span class="typing-text noselect"></span>
-								</h2>
-							</div>
-							<p>
-								Welcome to my portfolio!<br />
-								<span id="intro-p">Qaidjohar Jukker</span> is an
-								<span id="intro-p"
-									>Experienced Software Developer</span
-								>
-								with a passion for building
-								<span id="intro-p">secured</span> and
-								<span id="intro-p">user-centric</span> web
-								applications. With a
-								<span id="intro-p">strong</span> foundation in
-								<span id="intro-p">DevOps & Cloud</span>,
-								there's <span id="intro-p">confidence</span> in
-								delivering
-								<span id="intro-p">scalable solutions</span> to
-								diverse project challenges.
-							</p>
+    <link rel="canonical" href="https://qaidjohar.tech/" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/favicon-180x180.png"
+    />
 
-							<div class="intro-btns">
-								<a
-									class="button btn-cv-download noselect"
-									href="/assets/resume/resume.pdf"
-									target="_blank"
-									><i
-										class="fa-solid fa-cloud-arrow-down fa-lg"></i
-									>Resume</a
-								>
-								<a
-									class="button btn-contact contact-btn hb-fill-right-bg noselect"
-									onclick="toContact()"
-									><i
-										class="fa-regular fa-envelope fa-lg"></i>
-									<span>Contact Me</span></a
-								>
-							</div>
-							<a class="scroll noselect" onclick="toAbout()"
-								>Scroll Down</a
-							>
-						</div>
-						<div class="img">
-							<img
-								onContextMenu="return false;"
-								loading="lazy"
-								class="intro-img"
-								src="assets/images/photo-intro.jpg"
-								alt="intro-image" />
-						</div>
-					</div>
-				</section>
-				<svg
-					width="100%"
-					height="100%"
-					id="svg"
-					viewBox="0 0 1440 400"
-					xmlns="http://www.w3.org/2000/svg"
-					class="transition duration-300 ease-in-out delay-150">
-					<path
-						d="M 0,400 C 0,400 0,200 0,200 C 62.43333333333334,168.3025641025641 124.86666666666667,136.6051282051282 219,129 C 313.1333333333333,121.3948717948718 438.9666666666666,137.88205128205126 522,143 C 605.0333333333334,148.11794871794874 645.2666666666668,141.86666666666665 718,158 C 790.7333333333332,174.13333333333335 895.9666666666667,212.65128205128207 974,232 C 1052.0333333333333,251.34871794871793 1102.8666666666666,251.52820512820512 1176,243 C 1249.1333333333334,234.47179487179488 1344.5666666666666,217.23589743589744 1440,200 C 1440,200 1440,400 1440,400 Z"
-						stroke="none"
-						stroke-width="0"
-						fill="#222222ff"
-						class="transition-all duration-300 ease-in-out delay-150 path-0"
-						transform="rotate(-180 720 200)"></path>
-				</svg>
-				<!-- About me -->
-				<section id="about">
-					<div
-						class="about container"
-						data-aos="fade-up"
-						data-aos-duration="1000">
-						<h6 class="section-title">About Me</h6>
-						<!-- <div class="about-wrapper">
-							<div class="left">
-								<div>
-									<img
-										loading="lazy"
-										src="assets/images/icon/projects-icon.svg"
-										alt="projects-icon" />
-									<h2>
-										<span class="blue counter">02</span>
-										<span class="blue"> Years</span>
-										Job Experience
-									</h2>
-								</div>
-								<div>
-									<img
-										loading="lazy"
-										src="assets/images/icon/dev-experience.svg"
-										alt="dev-experience-icon" />
-									<h2>
-										<span class="blue counter">05</span>
-										<span class="blue">+</span>
-										Projects Completed
-									</h2>
-								</div>
-							</div>
-							<div class="right">
-								<h2>
-									What are my strongest
-									<span class="blue"> sides </span>
-									and
-									<span class="blue"> skills?</span>
-								</h2>
-								<p>
-									One of my strongest qualities as a software
-									developer is my ability to think critically
-									and solve problems. I excel at breaking down
-									complex projects into manageable chunks and
-									coming up with innovative solutions to
-									problems that arise. I am also very
-									organized and detail-oriented, which allows
-									me to complete assignments on time and to
-									the highest standards.
-								</p>
-								<p>
-									As a full stack developer, I am proficient
-									in a variety of programming languages and
-									frameworks, including HTML, CSS, JavaScript,
-									and Python. I have experience working with
-									popular technologies such as MongoDB,
-									Express, React, and Node.js, and am skilled
-									in UI/UX development as well as I have the
-									ability to quickly adapt to new technologies
-									and frameworks. I have a wide range of
-									knowledge about technologies beyond those
-									mentioned.
-								</p>
-								<p>
-									I am also a strong communicator and able to
-									effectively collaborate with clients and
-									team members to understand their needs and
-									translate them into functional
-									specifications. Overall, I am confident in
-									my ability to deliver high-quality web
-									solutions that meet the needs of my clients
-									and exceed their expectations.
-								</p>
-							</div>
-						</div> -->
-					</div>
-				</section>
-				<!-- My bio -->
-				<section id="bio">
-					<div
-						class="container"
-						data-aos="fade-up"
-						data-aos-duration="1000">
-						<!-- <h6 class="section-title">My Bio</h6> -->
-						<div class="bio">
-							<div class="img">
-								<img
-									loading="lazy"
-									class="bio-img"
-									src="./assets/images/photo-bio.jpg"
-									alt="photo-bio" />
-							</div>
-							<div class="text">
-								<h2>
-									<span class="blue">Biography,<br /></span>
-									a few words
-								</h2>
-								<p>
-									Hi, I'm Qaidjohar Jukker, a tech enthusiast
-									from India. I am currently an undergraduate
-									at Techno India NJR Institute of Technology,
-									where I am developing a solid foundation in
-									software engineering and Competitive
-									Programming. With a strong track record of
-									achievement, I am committed to using my
-									skills aise to create innovative and
-									effective solutions for my clients.
-								</p>
-								<p>
-									I proudly hold the title of
-									<b
-										>Beta Microsoft Learn Student
-										Ambassador,</b
-									>
-									engaging with the vibrant community of MLSAs
-									and GDG. I am a
-									<b
-										>RedHat Certified System Administrator
-										(RHCSA)</b
-									>
-									and continue to deepen my expertise in
-									DevOps, automation, and cloud
-									infrastructure. Additionally, I possess
-									strong cybersecurity skills being a
-									<b
-										>Google Certified Cybersecurity
-										Professional</b
-									>. I actively contribute to open-source
-									projects, fostering a vibrant atmosphere of
-									learning and collaboration.
-								</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-								<p>
-									In my free time, I enjoy Photography,
-									playing games and watching movies. I am also
-									an avid learner and am always looking for
-									ways to improve my skills and knowledge. In
-									addition to my technical skills, I am a
-									reliable and team-oriented individual who is
-									always ready to collaborate with team
-									members and clients to ensure that projects
-									are delivered to the highest standards. I am
-									always excited to collab with like-minded
-									people and create something amazing
-									together.
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<svg
-					width="100%"
-					height="100%"
-					id="svg"
-					viewBox="0 0 1440 400"
-					xmlns="http://www.w3.org/2000/svg"
-					class="transition duration-300 ease-in-out delay-150">
-					<path
-						d="M 0,500 C 0,500 0,250 0,250 C 53.5,275.4589743589744 107,300.9179487179487 202,290 C 297,279.0820512820513 433.5,231.7871794871795 519,219 C 604.5,206.2128205128205 638.9999999999999,227.93333333333334 710,242 C 781.0000000000001,256.06666666666666 888.5,262.4794871794872 968,272 C 1047.5,281.5205128205128 1099,294.14871794871794 1173,291 C 1247,287.85128205128206 1343.5,268.925641025641 1440,250 C 1440,250 1440,500 1440,500 Z"
-						stroke="none"
-						stroke-width="0"
-						fill="#222222ff"
-						class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
-				</svg>
-				<!-- Skills -->
-				<section id="skills" class="text-center">
-					<div
-						class="container"
-						data-aos="fade-up"
-						data-aos-duration="1000">
-						<h6 class="section-title">Skills</h6>
-						<h3 class="skill-label">Programming Skills</h3>
-						<div class="skill-cards-container">
-							<div class="div-card">
-								<div
-									class="div-card-item cp"
-									title="C Programming"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item html"
-									title="HTML"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item css"
-									title="CSS"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item js"
-									title="JavaScript"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item cpp"
-									title="C++"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item python"
-									title="Python"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item flask"
-									title="Flask"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item flutter"
-									title="Flutter"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item mysql"
-									title="MySQL"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item mongodb"
-									title="MongoDB"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item express-js"
-									title="Express.js"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item react-js"
-									title="React.js"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item node-js"
-									title="Node.js"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item next-js"
-									title="Next.js"></div>
-							</div>
-							<!-- <div class="div-card">
-								<div
-									class="div-card-item java"
-									title="Level : Beginner"></div>
-								<span>Java</span>
-							</div> -->
-							<!-- <div class="div-card">
-								<div
-									class="div-card-item csharp"
-									title="Level : Beginner"></div>
-								<span>C Sharp</span>
-							</div> -->
-						</div>
-						<h3 class="skill-label">Tools & Other Skills</h3>
-						<div class="skill-cards-container">
-							<div class="div-card">
-								<div
-									class="div-card-item git"
-									title="GIT"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item azure"
-									title="Microsoft Azure"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item gcp"
-									title="Google Cloud Platform"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item aws"
-									title="Amazon Web Services"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item redhat"
-									title="RedHat Enterprise Linux"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item docker"
-									title="Docker"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item kubernetes"
-									title="Kubernetes"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item ansible"
-									title="Ansible"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item jenkins"
-									title="Jenkins"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item firebase"
-									title="Firebase"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item android-studio"
-									title="Android Studio"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item postman"
-									title="Postman API"></div>
-							</div>
-							<div class="div-card">
-								<div
-									class="div-card-item jupyter"
-									title="Jupyter Notebook"></div>
-							</div>
-							<!-- <div class="div-card">
-								<div
-									class="div-card-item colab"
-									title="Level"></div>
-								<span>Google Colab</span>
-							</div> -->
-							<!-- <div class="div-card">
-								<div
-									class="div-card-item jmeter"
-									title="Level : Beginner"></div>
-								<span>Apache JMeter</span>
-							</div> -->
-						</div>
-					</div>
-				</section>
-				<svg
-					width="100%"
-					height="100%"
-					id="svg"
-					viewBox="0 0 1440 400"
-					xmlns="http://www.w3.org/2000/svg"
-					class="transition duration-300 ease-in-out delay-150">
-					<path
-						d="M 0,400 C 0,400 0,200 0,200 C 75.28461538461539,167.45897435897436 150.56923076923078,134.91794871794872 239,134 C 327.4307692307692,133.08205128205128 429.0076923076923,163.7871794871795 513,172 C 596.9923076923077,180.2128205128205 663.4000000000001,165.93333333333337 741,183 C 818.5999999999999,200.06666666666663 907.3923076923077,248.47948717948714 977,269 C 1046.6076923076923,289.52051282051286 1097.0307692307692,282.14871794871794 1171,266 C 1244.9692307692308,249.85128205128206 1342.4846153846154,224.92564102564103 1440,200 C 1440,200 1440,400 1440,400 Z"
-						stroke="none"
-						stroke-width="0"
-						fill="#222222ff"
-						class="transition-all duration-300 ease-in-out delay-150 path-0"
-						transform="rotate(-180 720 200)"></path>
-				</svg>
-				<!-- Projects -->
-				<section id="projects">
-					<div
-						class="container"
-						data-aos="fade-up"
-						data-aos-duration="1000">
-						<h6 class="section-title">Projects</h6>
-						<div class="projects-section">
-							<div class="project-data-wrapper">
-								<div class="project-data"></div>
-								<div class="navigation"></div>
-								<div class="arrow-left">
-									<i class="fa fa-chevron-left"></i>
-								</div>
-								<div class="arrow-right">
-									<i class="fa fa-chevron-right"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<svg
-					width="100%"
-					height="100%"
-					id="svg"
-					viewBox="0 0 1440 400"
-					xmlns="http://www.w3.org/2000/svg"
-					class="transition duration-300 ease-in-out delay-150">
-					<path
-						d="M 0,400 C 0,400 0,200 0,200 C 63.06410256410257,245.6948717948718 126.12820512820514,291.3897435897436 219,265 C 311.87179487179486,238.6102564102564 434.551282051282,140.1358974358974 510,145 C 585.448717948718,149.8641025641026 613.6666666666666,258.0666666666667 679,266 C 744.3333333333334,273.9333333333333 846.7820512820515,181.59743589743587 939,167 C 1031.2179487179485,152.40256410256413 1113.2051282051282,215.54358974358976 1195,234 C 1276.7948717948718,252.45641025641024 1358.397435897436,226.2282051282051 1440,200 C 1440,200 1440,400 1440,400 Z"
-						stroke="none"
-						stroke-width="0"
-						fill="#222222ff"
-						class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
-				</svg>
-				<!-- Special Milestones -->
-				<section id="milestones" class="text-center">
-					<div
-						class="container"
-						data-aos="fade-up"
-						data-aos-duration="1000">
-						<h6 class="section-title">Special Milestones</h6>
-						<div class="skill-cards-container">
-							<a
-								href="https://api.badgr.io/public/assertions/q6S1FftORpGT3fExlHio0A?identity__email=qaidjoharytqt%40gmail.com"
-								target="_blank">
-								<img
-									src="assets/images/postmanapi.png"
-									alt="Postman API Stude" />
-							</a>
-							<a
-								href="https://mvp.microsoft.com/en-US/studentambassadors/profile/5450daa0-da8e-46ab-a07c-443543a010e7"
-								target="_blank"
-								class="mlsa">
-								<img
-									src="assets/images/betamlsa.png"
-									alt="Beta Microsoft Learn Student Ambassador" />
-							</a>
-							<a
-								href="https://www.credly.com/badges/ca06bf0e-7773-4520-b1c4-51d8a4be15ed/public_url"
-								target="_blank">
-								<img
-									src="assets/images/google-cybersecurity.png"
-									alt="Google Certified Cybersecurity Professional" />
-							</a>
-							<a
-								href="https://www.credly.com/badges/13e579bc-5dc0-44ad-811f-a765dcff6e26/public_url"
-								target="_blank">
-								<img
-									src="assets/images/gccf.png"
-									alt="Google Cloud Computing Foundations" />
-							</a>
-							<a
-								href="https://www.holopin.io/@qaidjoharj53#"
-								target="_blank">
-								<img
-									src="assets/images/hacktoberfest.png"
-									alt="HacktoberFest 2023" />
-							</a>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Qaidjohar Jukker",
+        "jobTitle": "Software Engineer",
+        "url": "https://qaidjohar.tech",
+        "sameAs": [
+          "https://github.com/qaidjoharj53",
+          "https://lk.linkedin.com/in/qaidjoharj53",
+          "https://twitter.com/qaidjoharj53"
+        ],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Techno India NJR Institute of Technology"
+        },
+        "knowsAbout": [
+          "Backend Engineering",
+          "API Design",
+          "Cloud Infrastructure",
+          "DevOps",
+          "System Design"
+        ]
+      }
+    </script>
 
-							<a
-								href="https://www.credly.com/badges/76d98fbd-fa93-4700-9fc0-ec186bbbd888/public_url"
-								target="_blank">
-								<img
-									src="assets/images/dataA.png"
-									alt="IBM SkillsBuild Data Analysis Using Python" />
-							</a>
-							<a
-								href="https://www.credly.com/badges/fbdc9ea4-d645-44d4-9e36-c5f7b9f70dc8/public_url"
-								target="_blank">
-								<img
-									src="assets/images/rhcsa.png"
-									alt="RedHat Certified System Administrator" />
-							</a>
-							<a
-								href="https://www.credly.com/badges/111ac50e-bb02-4576-9192-7cbce7a463c3/public_url"
-								target="_blank">
-								<img
-									src="assets/images/dataV.png"
-									alt="IBM SkillsBuild Data Visualization Using Python" />
-							</a>
-						</div>
-						<div class="milestones">
-							<div class="timeline">
-								<ul>
-                                    <li>
-										<div class="timeline-content">
-											<h3 class="date">
-												September, 2025 - Present 
-											</h3>
-											<h2 class="title job">
-												Software Engineer
-											</h2>
-											<a
-												href="https://hrone.cloud/"
-												target="_blank">
-												<h3 class="sub-title company">
-													HROne
-												</h3>
-											</a>
-											<p class="description">
-                                                Contributing to the development of <a href="https://hrone.studio/" target="_blank"><strong>HROne Studio</strong></a>, building scalable backend systems using <strong>FastAPI</strong> and <strong>MongoDB aggregation pipelines</strong> for efficient data processing and performance optimization.
-                                                Developed <strong>end-to-end API key management system</strong>, enabling secure access and communication for external integrations.
-                                                Collaborated with cross-functional teams to ensure <strong>seamless API integration</strong> and system reliability.
-                                                Improved user experience by optimizing <strong>API key generation and access workflows</strong> for registered users.
-  
-										</div>
-									</li>
-                                    <li>
-										<div class="timeline-content">
-											<h3 class="date">
-												June - December, 2025 
-											</h3>
-											<h2 class="title job">
-												Software Developer Intern
-											</h2>
-											<a
-												href="https://infonza.com/"
-												target="_blank">
-												<h3 class="sub-title company">
-													Infonza Innovations
-												</h3>
-											</a>
-											<p class="description">
-                                                Contributed to the development and deployment of <strong>YuvaHire, a campus placement management platform</strong>, currently in testing phase. Built scalable backend services using <strong>Bun, Express, Prisma, PostgreSQL, and SSE</strong> with a <strong>TypeScript-based modular monolith architecture</strong>, integrated with a Next.js frontend (Redux).
-                                                Implemented containerized deployments using <strong>Docker</strong> and managed multi-platform hosting across <strong>GCP, Vercel and Render</strong>, leveraging <strong>Cloudflare R2</strong> for object storage and <strong>Cloudflare Workers</strong> for edge processing and performance optimization.
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="timeline-content">
-											<h3 class="date">
-												December, 2024 - Present
-											</h3>
-											<h2 class="title job">
-												Software Engineer - Freelance
-											</h2>
-											<a
-												href="https://sanaank.com/"
-												target="_blank">
-												<h3 class="sub-title company">
-													Sanaank
-												</h3>
-											</a>
-											<p class="description">
-												Developed a dynamic website for
-												the Sanaank Quiz App using
-												Next.js, also integrating
-												payment gateway, leading to a
-												30% boost in user retention and
-												50% faster server response with
-												deployment on Cloud Run.<br />
-												Building a comprehensive
-												learning and quiz mobile app
-												using flutter with real-time
-												quizzes and a robust in-app
-												payment system, projected to
-												onboard 10000+ users in the
-												first quarter post-launch.
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="timeline-content">
-											<h3 class="date">
-												November, 2024 - February, 2025
-											</h3>
-											<h2 class="title job">
-												Backend Developer & Project
-												Manager Intern
-											</h2>
-											<a
-												href="https://codingbits.in/"
-												target="_blank">
-												<h3 class="sub-title company">
-													Coding Bits
-												</h3>
-											</a>
-											<p class="description">
-												Designed and optimized NoSQL
-												database models, improving query
-												performance by 30%.<br />Managed
-												4 team leaders, defined tasks,
-												and streamlined workflows,
-												boosting project completion rate
-												by 40%.
-											</p>
-										</div>
-									</li>
+    <link rel="stylesheet" href="css/styles.css" />
+    <base target="_blank" />
+    <base target="_blank" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-									<li>
-										<div class="timeline-content">
-											<h3 class="date">
-												September - October, 2023
-											</h3>
-											<h2 class="title job">
-												Artificial Intelligence -
-												Virtual Intern
-											</h2>
-											<h3 class="sub-title company">
-												CodSoft
-											</h3>
-											<p class="description">
-												I excelled in diverse AI areas.
-												I crafted a rule-based chatbot
-												with Python's NLTK, implemented
-												a strategic Tic-Tac-Toe AI using
-												Minimax, and delved into
-												computer vision and deep
-												learning for an image captioning
-												AI. This experience enriched my
-												AI skills significantly.
-											</p>
-										</div>
-									</li>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <a href="/" class="nav-brand" aria-label="Home">QJ</a>
 
-									<li>
-										<div class="timeline-content">
-											<h3 class="date">
-												June - July, 2023
-											</h3>
-											<h2 class="title job">
-												Data Analytics - Virtual Intern
-											</h2>
-											<h3 class="sub-title company">
-												IBM
-											</h3>
-											<p class="description">
-												I spearheaded a team to develop
-												an AI-powered electric vehicle
-												buying assistant, leveraging
-												Data Analytics and Machine
-												Learning. This role enhanced my
-												ise in Python libraries, data
-												interpretation, and leadership
-												within a virtual setting.
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="timeline-content">
-											<h3 class="date">2022 - 2026</h3>
-											<h2 class="title education">
-												BTech - (Computer Science
-												Engineering)
-											</h2>
-											<a
-												href="https://www.technonjr.org/"
-												target="_blank">
-												<h3 class="sub-title school">
-													Techno India NJR Institute
-													of Technology
-												</h3>
-											</a>
-											<p class="description">
-												Pursuing BTech (CSE) at TINJRIT,
-												Qaidjohar Jukker is dedicated to
-												advancing proficiency in
-												software development
-												technologies, seamlessly
-												integrating theoretical
-												knowledge with a robust emphasis
-												on fundamental development
-												principles.
-											</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-				<svg
-					width="100%"
-					height="100%"
-					id="svg"
-					viewBox="0 0 1440 400"
-					xmlns="http://www.w3.org/2000/svg"
-					class="transition duration-300 ease-in-out delay-150">
-					<path
-						d="M 0,400 C 0,400 0,200 0,200 C 75.28461538461539,167.45897435897436 150.56923076923078,134.91794871794872 239,134 C 327.4307692307692,133.08205128205128 429.0076923076923,163.7871794871795 513,172 C 596.9923076923077,180.2128205128205 663.4000000000001,165.93333333333337 741,183 C 818.5999999999999,200.06666666666663 907.3923076923077,248.47948717948714 977,269 C 1046.6076923076923,289.52051282051286 1097.0307692307692,282.14871794871794 1171,266 C 1244.9692307692308,249.85128205128206 1342.4846153846154,224.92564102564103 1440,200 C 1440,200 1440,400 1440,400 Z"
-						stroke="none"
-						stroke-width="0"
-						fill="#222222ff"
-						class="transition-all duration-300 ease-in-out delay-150 path-0"
-						transform="rotate(-180 720 200)"></path>
-				</svg>
-				<!-- Contact -->
-				<section id="contact" class="text-center">
-					<div
-						class="container"
-						data-aos="fade-up"
-						data-aos-duration="1000">
-						<h6 class="section-title">Contact</h6>
-						<h2 class="contact-title">
-							Call or write <span class="blue">anytime</span>
-						</h2>
-						<div class="row">
-							<div class="form col-md-7 col-lg-8">
-								<form
-									id="contact-form"
-									action="https://formspree.io/f/mayraldk"
-									method="post">
-									<div class="form-group">
-										<label for="name">Full Name</label>
-										<input
-											type="text"
-											name="fullName"
-											class="form-control"
-											id="name"
-											placeholder=""
-											required />
-									</div>
-									<div class="form-group">
-										<label for="email"
-											>E-Mail Address</label
-										>
-										<input
-											type="email"
-											name="email"
-											class="form-control"
-											id="email"
-											placeholder=""
-											required />
-									</div>
-									<div class="form-group">
-										<label for="email">Message</label>
-										<textarea
-											title="message"
-											class="form-control"
-											name="message"
-											id="Message"
-											required></textarea>
-									</div>
-									<button
-										type="submit"
-										class="button btn-send-message noselect">
-										<i
-											class="fa-solid fa-paper-plane fa-lg"></i>
-										Send Message
-									</button>
-								</form>
-							</div>
-							<div class="img-bg col-md-5 col-lg-4">
-								<div class="contact-img">
-									<lottie-player
-										src="./assets/images/contact-portfolio.json"
-										mode="bounce"
-										background="transparent"
-										speed="1.0"
-										loop
-										autoplay></lottie-player>
-								</div>
-							</div>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
 
-							<!-- Footer -->
-							<footer>
-								<div class="main">
-									<div class="col1">
-										<h3 class="heading">Quick Links</h3>
-										<div class="footer-nav">
-											<ul>
-												<li>
-													<a onclick="toAbout()">
-														About
-													</a>
-												</li>
-												<li>
-													<a onclick="toSkills()">
-														Skills
-													</a>
-												</li>
-												<li>
-													<a onclick="toprojects()">
-														Projects
-													</a>
-												</li>
-												<li>
-													<a onclick="toMilestones()">
-														Milestones
-													</a>
-												</li>
-												<li>
-													<a onclick="toContact()">
-														Contact
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#freelance" class="nav-link">Freelance</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <button
+              class="theme-toggle"
+              aria-label="Toggle theme"
+              title="Toggle theme"
+            >
+              <span class="theme-toggle-light" aria-hidden="true">☀</span>
+              <span class="theme-toggle-dark" aria-hidden="true">☾</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <progress
+        class="scroll-progress"
+        max="100"
+        value="0"
+        aria-hidden="true"
+      ></progress>
+    </nav>
 
-									<div class="col2">
-										<h3 class="heading">Support</h3>
-										<div class="support">
-											<ul>
-												<!-- <li>
-													<a
-														href="https://www.freeprivacypolicy.com/"
-														target="_blank"
-														>Terms & Conditions</a
-													>
-												</li> -->
-												<li>
-													<a
-														href="https://www.freeprivacypolicy.com/live/190b4cb8-45d5-4b22-ba82-72bdb0373b87"
-														target="_blank"
-														>Privacy Policy</a
-													>
-												</li>
-											</ul>
-										</div>
-									</div>
+    <main id="main">
+      <!-- Hero -->
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-photo">
+              <img
+                src="assets/images/photo-3.jpg"
+                alt="Qaidjohar Jukker"
+                loading="lazy"
+              />
+            </div>
+            <div class="hero-text">
+              <p class="hero-eyebrow">Full-Stack Software Engineer</p>
+              <h1 class="hero-title">
+                Hi, I'm <span class="text-accent">Qaidjohar</span>
+              </h1>
+              <div class="hero-typing">
+                <span class="typing-prefix">I build </span>
+                <span
+                  class="typing-text"
+                  data-words="end-to-end products.,scalable backend systems.,AI/ML solutions.,cross-platform mobile apps.,cloud infrastructure.,real-time applications."
+                ></span>
+                <span class="typing-cursor" aria-hidden="true">|</span>
+              </div>
+              <p class="hero-description">
+                Software engineer who ships across the full stack - from
+                React/Next.js frontends and React Native & Flutter mobile apps
+                to FastAPI backends, AI/ML prototypes, and cloud infrastructure.
+                Strongest in backend architecture and system design, but
+                comfortable anywhere in the stack. Based in
+                <strong>Noida, India</strong> and
+                <strong class="text-accent">open to relocation</strong>
+                worldwide.
+              </p>
+              <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary"
+                  >Let's work together</a
+                >
+                <a
+                  href="/assets/resume/resume.pdf"
+                  download
+                  class="btn btn-secondary"
+                  >Download Resume</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+          <span class="hero-scroll-text">Scroll</span>
+          <span class="hero-scroll-line"></span>
+        </div>
+      </section>
 
-									<div class="col3">
-										<h3 class="heading">Get in touch</h3>
-										<div class="social social-media-set">
-											<a
-												title="GitHub"
-												href="https://github.com/qaidjoharj53"
-												class="social-icon"
-												target="_blank">
-												<div class="img github"></div>
-											</a>
-											<a
-												title="LinkedIn"
-												href="https://lk.linkedin.com/in/qaidjoharj53"
-												class="social-icon"
-												target="_blank">
-												<div class="img linkedin"></div>
-											</a>
-											<a
-												title="Twitter"
-												href="https://twitter.com/qaidjoharj53"
-												class="social-icon"
-												target="_blank">
-												<div class="img twitter"></div>
-											</a>
-											<a
-												title="Instagram"
-												href="https://instagram.com/qaidjoharjukker53"
-												class="social-icon"
-												target="_blank">
-												<div
-													class="img instagram"></div>
-											</a>
-										</div>
-									</div>
-								</div>
+      <!-- About -->
+      <section id="about" class="about section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">01 — About</span>
+            <h2 class="section-title">
+              Engineer, builder,<br /><span class="text-accent"
+                >problem solver.</span
+              >
+            </h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                I'm Qaidjohar Jukker, a
+                <strong>full-stack software engineer</strong> from
+                <strong>Udaipur, Rajasthan</strong>, currently working out of
+                <strong>Noida</strong>. I hold a
+                <strong>BTech in Computer Science Engineering</strong>
+                from Techno India NJR Institute of Technology (2022–2026).
+              </p>
+              <p>
+                I build across the entire stack -
+                <strong>React/Next.js frontends</strong>,
+                <strong>React Native & Flutter mobile apps</strong>,
+                <strong>FastAPI/Node.js backends</strong>,
+                <strong>AI/ML prototypes</strong>, and
+                <strong>cloud infrastructure</strong>. My deepest expertise is
+                in backend architecture and system design, but I don't stop
+                there. I've shipped production code handling thousands of users,
+                built real-time quiz platforms with Socket.io, deployed
+                containerized services across GCP and AWS, and designed API key
+                management systems for enterprise integrations.
+              </p>
+              <p>
+                I'm a <strong>MongoDB Certified Associate Developer</strong>. I
+                actively contribute to open source and believe in learning in
+                public. I'm also a
+                <strong>RedHat Certified System Administrator (RHCSA)</strong>.
+              </p>
+              <p class="about-personality">
+                Outside of work, you'll find me exploring photography, gaming,
+                or catching up on movies. I'm always open to collaborating with
+                like-minded people on interesting problems.
+              </p>
+              <div class="about-location">
+                <span class="location-badge">
+                  <span class="location-dot" aria-hidden="true"></span>
+                  Currently in Noida — Open to relocation
+                </span>
+              </div>
+            </div>
+            <div class="about-credentials">
+              <div class="credential-card">
+                <span class="credential-number" data-final="02+">02+</span>
+                <span class="credential-label">Years in Production</span>
+              </div>
+              <div class="credential-card">
+                <span class="credential-number" data-final="10+">10+</span>
+                <span class="credential-label">Projects Shipped</span>
+              </div>
+              <div class="credential-card">
+                <span class="credential-number" data-final="5+">5+</span>
+                <span class="credential-label">Certifications</span>
+              </div>
+              <div class="credential-card">
+                <span class="credential-number" data-final="15K+">15K+</span>
+                <span class="credential-label">Users Reached</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-								<div class="footer-rights">
-									<hr />
-									<div class="container">
-										<div class="copyright">
-											<p>
-												Copyright &copy; <span id="current-year"></span> Qaidjohar Jukker. All rights reserved.
-											</p>
-										</div>
-									</div>
-								</div>
-							</footer>
-						</div>
-					</div>
-				</section>
-			</main>
-			<a title="Go to top." href="#to-top">
-				<div class="to-top"><i class="fa-solid fa-angles-up"></i></div>
-			</a>
-			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-			<script src="scripts/libs/tilt.js"></script>
-			<script
-				src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-				integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-				crossorigin="anonymous"
-				target="_blank"></script>
-			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-			<script
-				src="https://kit.fontawesome.com/0a73ff5289.js"
-				crossorigin="anonymous"></script>
-			<script
-				src="https://code.jquery.com/jquery-3.6.0.js"
-				integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-				crossorigin="anonymous"></script>
+      <!-- Skills -->
+      <section id="skills" class="skills section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">02 — Skills</span>
+            <h2 class="section-title">
+              Tools & <span class="text-accent">technologies</span>
+            </h2>
+            <p class="section-subtitle">
+              Backend, frontend, mobile, cloud, and AI/ML — whatever the problem
+              demands.
+            </p>
+          </div>
+          <div class="skills-grid" id="skills-container">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+      </section>
 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-			<script src="./scripts/libs/counter.min.js"></script>
-			<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-			<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-			<script src="/scripts/main.js"></script>
-			<script>
-				document.getElementById("current-year").textContent =
-					new Date().getFullYear();
-			</script>
-			<script>
-				AOS.init();
-			</script>
-			<!-- Snow Flakes in December -->
-			<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
-			<script>
-				const d = new Date();
-				let month = d.getMonth();
-				if (month == 11) {
-					var snowflakes = new Snowflakes({ count: 20 });
-				} else {
-					null;
-				}
-			</script>
-		</div>
-	</body>
+      <!-- Experience -->
+      <section id="experience" class="experience section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">03 — Experience</span>
+            <h2 class="section-title">
+              Where I've <span class="text-accent">worked</span>
+            </h2>
+          </div>
+          <div class="timeline" id="experience-container">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="education section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">04 — Education</span>
+            <h2 class="section-title">
+              Credentials & <span class="text-accent">learning</span>
+            </h2>
+          </div>
+          <div class="education-list" id="education-container">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="projects section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">05 — Projects</span>
+            <h2 class="section-title">
+              Flagship <span class="text-accent">builds</span>
+            </h2>
+            <p class="section-subtitle">
+              End-to-end builds with measurable impact.
+            </p>
+          </div>
+          <div class="projects-featured" id="projects-featured">
+            <!-- Injected via JS -->
+          </div>
+          <div class="section-header section-header-secondary">
+            <h3 class="section-title-sm">
+              Other <span class="text-accent">experiments</span>
+            </h3>
+            <p class="section-subtitle">Learning projects and prototypes.</p>
+          </div>
+          <div class="projects-grid" id="projects-grid">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Freelance -->
+      <section id="freelance" class="freelance section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">05 — Freelance & Community</span>
+            <h2 class="section-title">
+              Client work & <span class="text-accent">community</span>
+            </h2>
+            <p class="section-subtitle">
+              Full-stack client work and community builds.
+            </p>
+          </div>
+
+          <div class="freelance-segment">
+            <h3 class="freelance-heading">Freelance Clients</h3>
+            <div class="freelance-grid" id="freelance-container">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+
+          <div class="freelance-segment">
+            <h3 class="freelance-heading">Community Contributions</h3>
+            <div class="freelance-grid" id="community-container">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+
+          <div class="services">
+            <h3 class="services-title">Services I offer</h3>
+            <ul class="services-list">
+              <li>Full-stack product builds</li>
+              <li>Backend API design & database optimization</li>
+              <li>Cross-platform mobile apps</li>
+              <li>AI/ML prototypes and data pipelines</li>
+              <li>Cloud deployment & DevOps setup</li>
+              <li>Payment gateway integration</li>
+              <li>Internal/management systems for organizations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="certifications section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">07 — Certifications</span>
+            <h2 class="section-title">
+              Credentials & <span class="text-accent">badges</span>
+            </h2>
+          </div>
+          <div class="cert-badges" id="certifications-container">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">08 — Contact</span>
+            <h2 class="section-title">
+              Let's build <span class="text-accent">something</span>
+            </h2>
+            <p class="section-subtitle">
+              Open to full-time roles, freelance projects, and collaborations.
+            </p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-form-wrapper">
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/mayraldk"
+                method="POST"
+                class="contact-form"
+              >
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-input form-textarea"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                  <span class="btn-text">Send Message</span>
+                  <span class="btn-loader" aria-hidden="true"></span>
+                </button>
+                <div class="form-status" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+            <div class="contact-info">
+              <div class="contact-block">
+                <h3 class="contact-block-title">Email</h3>
+                <a href="mailto:qaidjoharytqt@gmail.com" class="contact-link"
+                  >qaidjoharytqt@gmail.com</a
+                >
+              </div>
+              <div class="contact-block">
+                <h3 class="contact-block-title">Location</h3>
+                <p>
+                  Noida, India
+                  <span class="text-muted">— open to relocation</span>
+                </p>
+              </div>
+              <div class="contact-block">
+                <h3 class="contact-block-title">Social</h3>
+                <div class="social-links">
+                  <a
+                    href="https://github.com/qaidjoharj53"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link"
+                    aria-label="GitHub"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://lk.linkedin.com/in/qaidjoharj53"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link"
+                    aria-label="LinkedIn"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                      ></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://twitter.com/qaidjoharj53"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link"
+                    aria-label="Twitter"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://instagram.com/qaidjoharjukker53"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link"
+                    aria-label="Instagram"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect
+                        x="2"
+                        y="2"
+                        width="20"
+                        height="20"
+                        rx="5"
+                        ry="5"
+                      ></rect>
+                      <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                      ></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="footer-logo">QJ</span>
+            <p class="footer-tagline">
+              Full-stack engineer building products that matter.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4 class="footer-heading">Navigate</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#freelance">Freelance</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 class="footer-heading">Legal</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://www.freeprivacypolicy.com/live/190b4cb8-45d5-4b22-ba82-72bdb0373b87"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © <span id="year"></span> Qaidjohar Jukker. All rights reserved.
+          </p>
+          <p class="footer-credit">
+            Built with semantic HTML, modern CSS, and vanilla JS.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="to-top" aria-label="Back to top" hidden>
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>

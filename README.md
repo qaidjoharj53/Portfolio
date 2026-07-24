@@ -8,7 +8,7 @@
 
 ## Social buttons
 
-[![qaidjoharj53 - www.qaidjoharj.me](https://img.shields.io/static/v1?label=qaidjoharj53&message=www.qaidjoharj.me&color=blue&logo=github)](https://www.qaidjoharj.me "Go to Website")
+[![qaidjoharj53 - www.qaidjohar.tech](https://img.shields.io/static/v1?label=qaidjoharj53&message=www.qaidjohar.tech&color=blue&logo=github)](https://www.qaidjohar.tech "Go to Website")
 [![stars - portfolio](https://img.shields.io/github/stars/qaidjoharj53/portfolio?style=social)](https://github.com/qaidjoharj53/portfolio)
 [![forks - portfolio](https://img.shields.io/github/forks/qaidjoharj53/portfolio?style=social)](https://github.com/qaidjoharj53/portfolio)
 
