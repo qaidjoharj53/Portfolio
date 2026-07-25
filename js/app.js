@@ -371,10 +371,7 @@ var communityWork = [
       "Community committee needed real-time visibility into member's dues, transactions, and expenses instead of manual spreadsheet reconciliation.",
     description:
       "Cross-platform mobile app built for tracking member contributions/dues, recording transactions, and providing the committee with a real-time financial dashboard. Push notifications via Firebase, Expo, and Apple APN keep both giver and receiver in the loop when any transaction is recorded.",
-    impact: [
-      { number: "Real-time", label: "financial visibility" },
-      { number: "Push", label: "transaction notifications" },
-    ],
+    impact: [{ number: "~120", label: "active users" }],
     stack: ["React Native", "Go", "Expo", "Supabase", "IIS Server"],
   },
 ];
