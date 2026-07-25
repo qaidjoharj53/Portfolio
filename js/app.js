@@ -174,7 +174,7 @@ var experienceData = [
     company: "Infonza Innovations",
     companyUrl: "https://yuvahire.com/",
     description: [
-      "Built and continue to maintain YuvaHire, a campus placement management platform - full-stack from Next.js frontend to Bun/Express backend.",
+      "Built and continue to maintain YuvaHire, a campus placement management platform.",
       "TypeScript-based modular monolith: Bun, Express, Prisma, PostgreSQL, with a Next.js + Redux frontend.",
       "Containerized deployments with Docker across GCP, Vercel, and Render.",
       "Leveraged Cloudflare R2 for object storage and Cloudflare Workers for edge processing and performance optimization.",
@@ -1024,6 +1024,9 @@ if (certificationsContainer) {
 var contactForm = document.getElementById("contact-form");
 var formStatus = document.querySelector(".form-status");
 var emailChoice = document.querySelector(".email-choice");
+var submitBtn = contactForm
+  ? contactForm.querySelector('button[type="submit"]')
+  : null;
 
 function buildEmailBody(name, email, message) {
   return (
@@ -1087,11 +1090,8 @@ if (contactForm) {
       return;
     }
 
-    if (formStatus) {
-      formStatus.textContent =
-        "Great! Choose your email provider to send the message:";
-      formStatus.classList.remove("is-visible", "is-success", "is-error");
-      formStatus.classList.add("is-visible", "is-success");
+    if (submitBtn) {
+      submitBtn.classList.add("is-hidden");
     }
 
     if (emailChoice) {

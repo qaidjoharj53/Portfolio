@@ -2142,11 +2142,14 @@ button {
   border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
+.form-submit-area .btn-full.is-hidden {
+  display: none;
+}
+
 .email-choice {
   display: none;
   flex-direction: column;
   gap: var(--space-3);
-  margin-top: var(--space-4);
 }
 
 .email-choice.is-visible {
