@@ -23,8 +23,8 @@ var skillsData = [
       { name: "React.js" },
       { name: "Next.js" },
       { name: "Redux" },
-      { name: "Vite" },
       { name: "Tailwind CSS" },
+      { name: "Vite" },
       { name: "React Native" },
       { name: "Flutter" },
       { name: "Expo" },
@@ -47,9 +47,9 @@ var skillsData = [
   {
     category: "Databases",
     items: [
+      { name: "MongoDB" },
       { name: "PostgreSQL" },
       { name: "MySQL" },
-      { name: "MongoDB" },
       { name: "Redis" },
       { name: "OpenSearch" },
       { name: "ClickHouse" },
@@ -60,20 +60,21 @@ var skillsData = [
   {
     category: "Cloud, DevOps & Systems",
     items: [
-      { name: "Azure" },
       { name: "AWS" },
       { name: "GCP" },
-      { name: "Firebase" },
-      { name: "Git" },
-      { name: "Cloudflare" },
+      { name: "Azure" },
       { name: "Docker" },
       { name: "Kubernetes" },
-      { name: "Ansible" },
       { name: "Jenkins" },
-      { name: "Render" },
+      { name: "Ansible" },
+      { name: "Terraform" },
+      { name: "Cloudflare" },
+      { name: "Firebase" },
       { name: "Vercel" },
+      { name: "Render" },
       { name: "Netlify" },
       { name: "Red Hat Enterprise Linux" },
+      { name: "Git" },
       { name: "Postman" },
       { name: "Android Studio" },
     ],
@@ -364,13 +365,16 @@ var communityWork = [
   {
     title: "Finance Management App",
     client: "Udaipur Toloba",
-    date: "In development",
+    date: "In Testing Phase",
     problem:
-      "Community committee needed real-time visibility into member contributions, donations, and expenses instead of manual spreadsheet reconciliation.",
+      "Community committee needed real-time visibility into member's dues, transactions, and expenses instead of manual spreadsheet reconciliation.",
     description:
-      "Cross-platform finance management mobile app built with React Native and Go backend for tracking member contributions/dues, logging donations, recording community expenses, and providing the committee with a real-time financial dashboard. Deployed on the organization's private secured IIS server.",
-    impact: [{ number: "Real-time", label: "financial visibility" }],
-    stack: ["React Native", "Go", "IIS Server"],
+      "Cross-platform mobile app built for tracking member contributions/dues, recording transactions, and providing the committee with a real-time financial dashboard. Push notifications via Firebase, Expo, and Apple APN keep both giver and receiver in the loop when any transaction is recorded.",
+    impact: [
+      { number: "Real-time", label: "financial visibility" },
+      { number: "Push", label: "transaction notifications" },
+    ],
+    stack: ["React Native", "Go", "Expo", "Supabase", "IIS Server"],
   },
 ];
 
