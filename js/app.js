@@ -4,7 +4,7 @@
 
 var skillsData = [
   {
-    category: "Languages",
+    category: "Languages & Core",
     items: [
       { name: "C" },
       { name: "C++" },
@@ -16,16 +16,22 @@ var skillsData = [
     ],
   },
   {
-    category: "Frontend",
+    category: "Frontend & Mobile",
     items: [
-      { name: "React.js" },
-      { name: "Next.js" },
       { name: "HTML5" },
       { name: "CSS3" },
+      { name: "React.js" },
+      { name: "Next.js" },
+      { name: "Redux" },
+      { name: "Vite" },
+      { name: "Tailwind CSS" },
+      { name: "React Native" },
+      { name: "Flutter" },
+      { name: "Expo" },
     ],
   },
   {
-    category: "Backend & Runtimes",
+    category: "Backend, APIs & Messaging",
     items: [
       { name: "Node.js" },
       { name: "Express.js" },
@@ -34,14 +40,16 @@ var skillsData = [
       { name: "Flask" },
       { name: "Prisma" },
       { name: "BullMQ" },
+      { name: "Socket.io" },
+      { name: "Kafka" },
     ],
   },
   {
     category: "Databases",
     items: [
-      { name: "MongoDB" },
       { name: "PostgreSQL" },
       { name: "MySQL" },
+      { name: "MongoDB" },
       { name: "Redis" },
       { name: "OpenSearch" },
       { name: "ClickHouse" },
@@ -50,54 +58,99 @@ var skillsData = [
     ],
   },
   {
-    category: "Mobile",
-    items: [{ name: "React Native" }, { name: "Flutter" }, { name: "Expo" }],
-  },
-  {
-    category: "Cloud & DevOps",
+    category: "Cloud, DevOps & Systems",
     items: [
+      { name: "Azure" },
       { name: "AWS" },
       { name: "GCP" },
-      { name: "Azure" },
+      { name: "Firebase" },
+      { name: "Git" },
+      { name: "Cloudflare" },
       { name: "Docker" },
       { name: "Kubernetes" },
-      { name: "Jenkins" },
       { name: "Ansible" },
-      { name: "Terraform" },
-      { name: "Cloudflare Workers" },
-      { name: "Cloudflare R2" },
-      { name: "Firebase" },
-      { name: "Vercel" },
+      { name: "Jenkins" },
       { name: "Render" },
+      { name: "Vercel" },
       { name: "Netlify" },
-      { name: "Vite" },
+      { name: "Red Hat Enterprise Linux" },
+      { name: "Postman" },
+      { name: "Android Studio" },
     ],
-  },
-  {
-    category: "Real-time & Messaging",
-    items: [{ name: "Socket.io" }, { name: "Server-Sent Events" }],
   },
   {
     category: "AI/ML & Data",
     items: [
       { name: "PyTorch" },
-      { name: "Transformers" },
       { name: "NLTK" },
       { name: "NumPy" },
+      { name: "Pandas" },
       { name: "Jupyter Notebook" },
-      { name: "Hugging Face Spaces" },
-    ],
-  },
-  {
-    category: "Systems & Tooling",
-    items: [
-      { name: "Red Hat Enterprise Linux" },
-      { name: "Git" },
-      { name: "Postman" },
-      { name: "Android Studio" },
+      { name: "Hugging Face" },
     ],
   },
 ];
+
+var iconMap = {
+  C: "cp.png",
+  "C++": "cpp.png",
+  Python: "python.png",
+  JavaScript: "js.png",
+  TypeScript: "typescript.png",
+  "React.js": "react-js.png",
+  "Next.js": "next-js.png",
+  HTML5: "html-5.png",
+  CSS3: "css-3.png",
+  "Node.js": "node-js.png",
+  "Express.js": "express-js.png",
+  Flask: "flask.png",
+  MongoDB: "mongodb.png",
+  MySQL: "mysql.png",
+  "React Native": "react-js.png",
+  Flutter: "flutter.svg",
+  AWS: "aws.png",
+  GCP: "gcp.png",
+  Azure: "azure.png",
+  Docker: "docker.png",
+  Kubernetes: "kubernetes.svg",
+  Jenkins: "jenkins.svg",
+  Ansible: "ansible.svg",
+  Firebase: "firebase.svg",
+  "Red Hat Enterprise Linux": "redhat.svg",
+  Git: "git.png",
+  Postman: "postman.png",
+  "Android Studio": "android-studio.png",
+  "Jupyter Notebook": "jupyter.png",
+  Go: "golang.png",
+  PostgreSQL: "postgresql.png",
+  SQL: "sql.png",
+  Expo: "expo.png",
+  FastAPI: "fastapi.png",
+  Bun: "bun.png",
+  Prisma: "prisma.png",
+  BullMQ: "bullmq.png",
+  "Socket.io": "socketio.png",
+  Kafka: "kafka.png",
+  Redis: "redis.png",
+  OpenSearch: "opensearch.png",
+  ClickHouse: "clickhouse.png",
+  Supabase: "supabase.png",
+  NeonDB: "neondb.png",
+  Terraform: "terraform.png",
+  Cloudflare: "cloudflare.png",
+  Vercel: "vercel.png",
+  Render: "render.png",
+  Netlify: "netlify.png",
+  PyTorch: "pytorch.png",
+  Transformers: "transformers.png",
+  NLTK: "nltk.png",
+  NumPy: "numpy.png",
+  Pandas: "pandas.png",
+  "Hugging Face": "huggingface.png",
+  Vite: "vite.png",
+  Redux: "redux.png",
+  "Tailwind CSS": "tailwindcss.png",
+};
 
 var experienceData = [
   {
@@ -186,6 +239,7 @@ var flagshipProjects = [
   {
     title: "Health Sync",
     subtitle: "Hospital Management System",
+    thumbnail: "assets/images/thumbnails/health-sync.png",
     description:
       "A comprehensive hospital management system addressing OPD queuing, bed availability, patient admission, and inventory management. Includes a patient-facing mobile app with appointments, medical history, and emergency volunteer support.",
     impact: [{ number: "+35%", label: "appointment efficiency" }],
@@ -195,6 +249,7 @@ var flagshipProjects = [
   {
     title: "GovID Extractor",
     subtitle: "OCR Document Processing",
+    thumbnail: "assets/images/thumbnails/govid-extractor.png",
     description:
       "Extracts structured data (name, document number, expiry) from government-issued ID images using Tesseract.js OCR with Sharp preprocessing. Overcame inconsistent OCR output with custom pattern matching for reliable data extraction.",
     impact: [
@@ -212,6 +267,7 @@ var flagshipProjects = [
   {
     title: "BookFlow",
     subtitle: "Library Management System",
+    thumbnail: "assets/images/thumbnails/bookflow.png",
     description:
       "Enables QR-code-based book borrowing and returns without librarian involvement. Streamlines library operations through automated check-in/check-out with real-time inventory tracking.",
     impact: [{ number: "-50%", label: "librarian workload" }],
@@ -315,16 +371,10 @@ var communityWork = [
       "Cross-platform finance management mobile app built with React Native and Go backend for tracking member contributions/dues, logging donations, recording community expenses, and providing the committee with a real-time financial dashboard. Deployed on the organization's private secured IIS server.",
     impact: [{ number: "Real-time", label: "financial visibility" }],
     stack: ["React Native", "Go", "IIS Server"],
-    // isDraft: true,
   },
 ];
 
 var certificationsData = [
-  //   {
-  //     title: "MongoDB Associate Developer",
-  //     url: "https://www.mongodb.com/certification",
-  //     image: "assets/images/mongodb-dev.png",
-  //   },
   {
     title: "RedHat Certified System Administrator",
     url: "https://www.credly.com/badges/fbdc9ea4-d645-44d4-9e36-c5f7b9f70dc8/public_url",
@@ -349,6 +399,11 @@ var certificationsData = [
     title: "Postman API Student Expert",
     url: "https://api.badgr.io/public/assertions/q6S1FftORpGT3fExlHio0A",
     image: "assets/images/postmanapi.png",
+  },
+  {
+    title: "Memory for AI Applications with MongoDB",
+    url: "https://www.credly.com/badges/51ba1a54-133d-4a1a-b40d-dc30f8ad8c98",
+    image: "assets/images/mongodb-memory-ai.png",
   },
   {
     title: "CS50x: Intro to Computer Science",
@@ -499,32 +554,36 @@ if (typingElement) {
 }
 
 /* ============================================
-   Scroll Reveal
+   Scroll Reveal System
    ============================================ */
 
-var revealElements = document.querySelectorAll(".reveal");
+var revealObserver;
 
-if ("IntersectionObserver" in window) {
-  var revealObserver = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
-  );
-
-  revealElements.forEach(function (el) {
-    revealObserver.observe(el);
-  });
-} else {
-  revealElements.forEach(function (el) {
-    el.classList.add("is-visible");
-  });
+function setupRevealObserver() {
+  if ("IntersectionObserver" in window) {
+    revealObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
+    );
+  }
 }
+
+function observeReveal(el) {
+  if (revealObserver) {
+    revealObserver.observe(el);
+  } else {
+    el.classList.add("is-visible");
+  }
+}
+
+setupRevealObserver();
 
 /* ============================================
    Back to Top
@@ -561,12 +620,6 @@ function createEl(tag, className, text) {
   return el;
 }
 
-function appendChildren(parent, children) {
-  children.forEach(function (child) {
-    if (child) parent.appendChild(child);
-  });
-}
-
 /* ============================================
    Data Injection: Skills
    ============================================ */
@@ -580,11 +633,25 @@ if (skillsContainer) {
 
     var list = createEl("div", "skill-list");
     category.items.forEach(function (item) {
-      var badge = createEl("span", "skill-item", item.name);
+      var badge = createEl("span", "skill-item");
+      var iconFile = iconMap[item.name];
+      if (iconFile) {
+        var img = document.createElement("img");
+        img.src = "assets/images/icon/" + iconFile;
+        img.alt = item.name;
+        img.className = "skill-item-icon";
+        img.loading = "lazy";
+        img.width = 16;
+        img.height = 16;
+        badge.appendChild(img);
+      }
+      var text = document.createTextNode(item.name);
+      badge.appendChild(text);
       list.appendChild(badge);
     });
     card.appendChild(list);
     skillsContainer.appendChild(card);
+    observeReveal(card);
   });
 }
 
@@ -604,7 +671,14 @@ if (experienceContainer) {
 
     var content = createEl("div", "timeline-content");
 
-    var date = createEl("div", "timeline-date", item.date);
+    var date = createEl("div", "timeline-date");
+    var dateText = document.createTextNode(item.date);
+    date.appendChild(dateText);
+    if (item.date.toLowerCase().indexOf("present") !== -1) {
+      var badge = createEl("span", "timeline-current-badge", "Current");
+      date.appendChild(badge);
+      dot.classList.add("is-current");
+    }
     content.appendChild(date);
 
     var title = createEl("h3", "timeline-title", item.title);
@@ -640,6 +714,7 @@ if (experienceContainer) {
 
     itemEl.appendChild(content);
     experienceContainer.appendChild(itemEl);
+    observeReveal(itemEl);
   });
 }
 
@@ -675,6 +750,7 @@ if (educationContainer) {
     card.appendChild(desc);
 
     educationContainer.appendChild(card);
+    observeReveal(card);
   });
 }
 
@@ -687,6 +763,14 @@ if (projectsFeatured) {
   flagshipProjects.forEach(function (project, index) {
     var article = createEl("article", "project-card-featured reveal");
     article.style.transitionDelay = index * 150 + "ms";
+
+    var imageDiv = createEl("div", "project-image");
+    var img = document.createElement("img");
+    img.src = project.thumbnail;
+    img.alt = project.title;
+    img.loading = "lazy";
+    imageDiv.appendChild(img);
+    article.appendChild(imageDiv);
 
     var body = createEl("div", "project-body");
 
@@ -732,6 +816,7 @@ if (projectsFeatured) {
 
     article.appendChild(body);
     projectsFeatured.appendChild(article);
+    observeReveal(article);
   });
 }
 
@@ -769,6 +854,7 @@ if (projectsGrid) {
     }
 
     projectsGrid.appendChild(article);
+    observeReveal(article);
   });
 }
 
@@ -819,6 +905,7 @@ if (freelanceContainer) {
     article.appendChild(stackDiv);
 
     freelanceContainer.appendChild(article);
+    observeReveal(article);
   });
 }
 
@@ -892,6 +979,7 @@ if (communityContainer) {
     }
 
     communityContainer.appendChild(article);
+    observeReveal(article);
   });
 }
 
@@ -923,58 +1011,105 @@ if (certificationsContainer) {
     link.appendChild(titleBelow);
 
     certificationsContainer.appendChild(link);
+    observeReveal(link);
   });
 }
 
 /* ============================================
-   Contact Form
+   Contact Form — Gmail / Outlook Choice
    ============================================ */
 
 var contactForm = document.getElementById("contact-form");
 var formStatus = document.querySelector(".form-status");
+var emailChoice = document.querySelector(".email-choice");
+
+function buildEmailBody(name, email, message) {
+  return (
+    "Hey Qaidjohar,\n\n" +
+    "You have a new message from your portfolio contact form:\n\n" +
+    "Name: " +
+    name +
+    "\n" +
+    "Email: " +
+    email +
+    "\n\n" +
+    "Message:\n" +
+    message +
+    "\n\n" +
+    "---\nSent from qaidjohar.tech"
+  );
+}
+
+function openGmail(name, email, message) {
+  var subject = "Portfolio Contact Form Submission";
+  var body = buildEmailBody(name, email, message);
+  var url =
+    "https://mail.google.com/mail/?view=cm&fs=1" +
+    "&to=" +
+    encodeURIComponent("qaidjoharytqt@gmail.com") +
+    "&su=" +
+    encodeURIComponent(subject) +
+    "&body=" +
+    encodeURIComponent(body);
+  window.open(url, "_blank");
+}
+
+function openOutlook(name, email, message) {
+  var subject = "Portfolio Contact Form Submission";
+  var body = buildEmailBody(name, email, message);
+  var url =
+    "https://outlook.live.com/mail/0/deeplink/compose" +
+    "?to=" +
+    encodeURIComponent("qaidjoharytqt@gmail.com") +
+    "&subject=" +
+    encodeURIComponent(subject) +
+    "&body=" +
+    encodeURIComponent(body);
+  window.open(url, "_blank");
+}
 
 if (contactForm) {
   contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    var submitBtn = contactForm.querySelector('button[type="submit"]');
-    submitBtn.classList.add("is-loading");
-    submitBtn.disabled = true;
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var message = document.getElementById("message").value.trim();
 
-    if (formStatus) {
-      formStatus.classList.remove("is-visible", "is-success", "is-error");
+    if (!name || !email || !message) {
+      if (formStatus) {
+        formStatus.textContent = "Please fill in all fields.";
+        formStatus.classList.remove("is-visible", "is-success", "is-error");
+        formStatus.classList.add("is-visible", "is-error");
+      }
+      return;
     }
 
-    fetch(contactForm.action, {
-      method: "POST",
-      body: new FormData(contactForm),
-      headers: {
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        if (response.ok) {
-          if (formStatus) {
-            formStatus.textContent =
-              "Message sent successfully. I will get back to you soon!";
-            formStatus.classList.add("is-visible", "is-success");
-          }
-          contactForm.reset();
-        } else {
-          throw new Error("Server responded with " + response.status);
-        }
-      })
-      .catch(function (error) {
-        if (formStatus) {
-          formStatus.textContent =
-            "Something went wrong. Please try again or email me directly at qaidjoharytqt@gmail.com";
-          formStatus.classList.add("is-visible", "is-error");
-        }
-      })
-      .finally(function () {
-        submitBtn.classList.remove("is-loading");
-        submitBtn.disabled = false;
-      });
+    if (formStatus) {
+      formStatus.textContent =
+        "Great! Choose your email provider to send the message:";
+      formStatus.classList.remove("is-visible", "is-success", "is-error");
+      formStatus.classList.add("is-visible", "is-success");
+    }
+
+    if (emailChoice) {
+      emailChoice.classList.add("is-visible");
+
+      var gmailBtn = emailChoice.querySelector(".email-gmail");
+      var outlookBtn = emailChoice.querySelector(".email-outlook");
+
+      if (gmailBtn) {
+        gmailBtn.onclick = function () {
+          openGmail(name, email, message);
+        };
+      }
+
+      if (outlookBtn) {
+        outlookBtn.onclick = function () {
+          openOutlook(name, email, message);
+        };
+      }
+    }
   });
 }
 
@@ -1060,36 +1195,3 @@ document
       el.style.transform = "";
     });
   });
-
-/* 3D Tilt Cards */
-document
-  .querySelectorAll(
-    ".credential-card, .project-card-featured, .project-card-compact, .case-study, .education-card, .skill-category",
-  )
-  .forEach(function (card) {
-    card.addEventListener("mousemove", function (e) {
-      var rect = card.getBoundingClientRect();
-      var x = (e.clientX - rect.left) / rect.width;
-      var y = (e.clientY - rect.top) / rect.height;
-      var rotateX = (0.5 - y) * 8;
-      var rotateY = (x - 0.5) * 8;
-      card.style.transform =
-        "perspective(1000px) rotateX(" +
-        rotateX +
-        "deg) rotateY(" +
-        rotateY +
-        "deg) translateY(-4px)";
-    });
-    card.addEventListener("mouseleave", function () {
-      card.style.transform = "";
-    });
-  });
-
-/* ============================================
-   Ensure all content is visible
-   ============================================ */
-
-// The reveal observer ran before DOM injection, so manually ensure visibility
-document.querySelectorAll(".reveal").forEach(function (el) {
-  el.classList.add("is-visible");
-});
