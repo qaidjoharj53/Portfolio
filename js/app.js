@@ -160,13 +160,13 @@ var experienceData = [
     company: "HROne",
     companyUrl: "https://hrone.cloud/",
     description: [
-      "Started as Software Engineer Trainee and built the end-to-end API key management system as my first major feature — enabling secure external integrations with granular access control.",
-      "Promoted to full-time Software Engineer. Developed major features including a comprehensive record audit logs system and a standalone analytics platform for HR insights.",
+      "Started as Software Engineer Trainee and built the end-to-end API key management system as my first major feature - enabling secure external integrations with granular access control.",
+      "Promoted to full-time Software Engineer. Developed major features including a comprehensive record audit logs system and a standalone analytics platform for data insights inspired from mongodb charts.",
+      "Built a CDC pipeline using MongoDB change streams and AWS MSK to sync data into OpenSearch and ClickHouse, powering both the record audit logs system and the analytics platform with near real-time search and aggregation.",
       "Building full-stack features for HROne Studio with FastAPI backends, MongoDB aggregation pipelines, and React frontend integration.",
-      "Collaborating cross-functionally on API design, system reliability, and UI implementation.",
     ],
     architecture:
-      "FastAPI microservices with MongoDB aggregation, React frontend, record audit logs, and standalone analytics platform",
+      "FastAPI microservices with MongoDB aggregation and change streams, AWS MSK CDC pipeline, OpenSearch and ClickHouse for analytics, React frontend, record audit logs, and standalone analytics platform",
   },
   {
     date: "June 2025 - Present",
@@ -175,12 +175,13 @@ var experienceData = [
     companyUrl: "https://yuvahire.com/",
     description: [
       "Built and continue to maintain YuvaHire, a campus placement management platform - full-stack from Next.js frontend to Bun/Express backend.",
-      "TypeScript-based modular monolith: Bun, Express, Prisma, PostgreSQL, and Server-Sent Events, with a Next.js + Redux frontend.",
+      "TypeScript-based modular monolith: Bun, Express, Prisma, PostgreSQL, with a Next.js + Redux frontend.",
       "Containerized deployments with Docker across GCP, Vercel, and Render.",
       "Leveraged Cloudflare R2 for object storage and Cloudflare Workers for edge processing and performance optimization.",
+      "Used BullMQ to queue and send customized bulk emails reliably at scale.",
     ],
     architecture:
-      "TypeScript modular monolith with containerized multi-platform deployment",
+      "TypeScript modular monolith with containerized multi-platform deployment, BullMQ for bulk email queueing",
   },
   {
     date: "December 2024 - April 2025",
@@ -190,7 +191,7 @@ var experienceData = [
     description: [
       "Built and shipped the Sanaank Quiz App website in Next.js with integrated payment gateway, deployed on GCP Cloud Run.",
       "Result: +30% user retention, 50% faster server response time.",
-      "Built a cross-platform Flutter + Firebase mobile app with real-time quizzes and in-app payments — projected to onboard 10,000+ users in Q1 post-launch.",
+      "Built a cross-platform Flutter + Firebase mobile app with real-time quizzes and in-app payments; projected to onboard 10,000+ users in Q1 post-launch.",
       "End-to-end ownership from frontend to mobile to DevOps.",
     ],
   },

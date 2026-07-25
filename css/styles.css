@@ -1335,6 +1335,28 @@ button {
   color: var(--accent);
 }
 
+.timeline-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-top: var(--space-4);
+  opacity: 0.5;
+  transition:
+    opacity 0.3s ease,
+    max-height 0.3s ease,
+    margin-top 0.3s ease;
+  cursor: default;
+}
+
+.timeline-hint::after {
+  content: "→";
+  color: var(--accent);
+  transition: transform 0.3s ease;
+}
+
 /* Hover expand - only on devices that support hover */
 @media (hover: hover) {
   .timeline-content:hover .timeline-desc,
@@ -1372,28 +1394,6 @@ button {
   .timeline-hint {
     display: none;
   }
-}
-
-.timeline-hint {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  color: var(--text-muted);
-  margin-top: var(--space-4);
-  opacity: 0.5;
-  transition:
-    opacity 0.3s ease,
-    max-height 0.3s ease,
-    margin-top 0.3s ease;
-  cursor: default;
-}
-
-.timeline-hint::after {
-  content: "→";
-  color: var(--accent);
-  transition: transform 0.3s ease;
 }
 
 .timeline-content:hover .timeline-hint::after {
