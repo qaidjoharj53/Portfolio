@@ -110,16 +110,27 @@
       <div class="nav-container">
         <a href="/" class="nav-brand" aria-label="Home">QJ</a>
 
-        <button
-          class="nav-toggle"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-          aria-label="Toggle navigation"
-        >
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-        </button>
+        <div class="nav-header-actions">
+          <button
+            class="theme-toggle theme-toggle-mobile"
+            aria-label="Toggle theme"
+            title="Toggle theme"
+          >
+            <span class="theme-toggle-light" aria-hidden="true">&#9728;</span>
+            <span class="theme-toggle-dark" aria-hidden="true">&#9788;</span>
+          </button>
+
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-label="Toggle navigation"
+          >
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+        </div>
 
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-links">
@@ -133,7 +144,7 @@
           </ul>
           <div class="nav-actions">
             <button
-              class="theme-toggle"
+              class="theme-toggle theme-toggle-desktop"
               aria-label="Toggle theme"
               title="Toggle theme"
             >

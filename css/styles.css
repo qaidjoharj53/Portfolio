@@ -246,6 +246,13 @@ button {
   color: var(--accent);
 }
 
+.nav-header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  z-index: 51;
+}
+
 .nav-toggle {
   display: flex;
   flex-direction: column;
@@ -300,7 +307,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
-  margin-bottom: var(--space-6);
 }
 
 .nav-link {
@@ -372,6 +378,10 @@ button {
   display: none;
 }
 
+.theme-toggle-desktop {
+  display: none;
+}
+
 .scroll-progress {
   position: absolute;
   bottom: -1px;
@@ -398,6 +408,14 @@ button {
     display: none;
   }
 
+  .theme-toggle-mobile {
+    display: none;
+  }
+
+  .theme-toggle-desktop {
+    display: flex;
+  }
+
   .nav-menu {
     position: static;
     display: flex;
@@ -415,7 +433,6 @@ button {
   .nav-links {
     flex-direction: row;
     gap: var(--space-6);
-    margin-bottom: 0;
   }
 
   .nav-link {

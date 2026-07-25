@@ -166,7 +166,7 @@ var experienceData = [
       "Building full-stack features for HROne Studio with FastAPI backends, MongoDB aggregation pipelines, and React frontend integration.",
     ],
     architecture:
-      "FastAPI microservices with MongoDB aggregation and change streams, AWS MSK CDC pipeline, OpenSearch and ClickHouse for analytics, React frontend, record audit logs, and standalone analytics platform",
+      "FastAPI microservices with MongoDB aggregation and change streams, AWS MSK CDC pipeline, OpenSearch for fast search results and ClickHouse for data analytics.",
   },
   {
     date: "June 2025 - Present",
@@ -181,7 +181,7 @@ var experienceData = [
       "Used BullMQ to queue and send customized bulk emails reliably at scale.",
     ],
     architecture:
-      "TypeScript modular monolith with containerized multi-platform deployment, BullMQ for bulk email queueing",
+      "TypeScript modular monolith with containerized multi-platform deployment, BullMQ for queueing and Redis for its internal caching.",
   },
   {
     date: "December 2024 - April 2025",
@@ -433,7 +433,7 @@ var certificationsData = [
    Theme System
    ============================================ */
 
-var themeToggle = document.querySelector(".theme-toggle");
+var themeToggles = document.querySelectorAll(".theme-toggle");
 var htmlEl = document.documentElement;
 
 function getPreferredTheme() {
@@ -451,12 +451,12 @@ function setTheme(theme) {
 
 setTheme(getPreferredTheme());
 
-if (themeToggle) {
+themeToggles.forEach(function (themeToggle) {
   themeToggle.addEventListener("click", function () {
     var current = htmlEl.getAttribute("data-theme");
     setTheme(current === "dark" ? "light" : "dark");
   });
-}
+});
 
 window
   .matchMedia("(prefers-color-scheme: dark)")
