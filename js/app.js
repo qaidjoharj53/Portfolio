@@ -86,8 +86,9 @@ var skillsData = [
       { name: "NLTK" },
       { name: "NumPy" },
       { name: "Pandas" },
-      { name: "Jupyter Notebook" },
       { name: "Hugging Face" },
+      { name: "Jupyter Notebook" },
+      { name: "Google Colab" },
     ],
   },
 ];
@@ -122,6 +123,7 @@ var iconMap = {
   Postman: "postman.png",
   "Android Studio": "android-studio.png",
   "Jupyter Notebook": "jupyter.png",
+  "Google Colab": "colab.png",
   Go: "golang.png",
   PostgreSQL: "postgresql.png",
   SQL: "sql.png",
@@ -239,14 +241,41 @@ var educationData = [
 
 var flagshipProjects = [
   {
-    title: "Health Sync",
-    subtitle: "Hospital Management System",
-    thumbnail: "assets/images/thumbnails/health-sync.png",
+    title: "Voice Cloner & TTS",
+    subtitle: "AI Voice Cloning and Text-to-Speech Web App",
+    thumbnail: "assets/images/thumbnails/voice-clone-tts.png",
     description:
-      "A comprehensive hospital management system addressing OPD queuing, bed availability, patient admission, and inventory management. Includes a patient-facing mobile app with appointments, medical history, and emergency volunteer support.",
-    impact: [{ number: "+35%", label: "appointment efficiency" }],
-    stack: ["MongoDB", "Express", "React", "Node.js", "Flutter"],
-    links: [{ label: "GitHub", url: "https://github.com/Hogwarts-Hackademy" }],
+      "A full-stack voice cloning and text-to-speech web application where users upload a voice sample and generate speech from text using PlayHT APIs. Includes voice upload handling, cloned-voice generation, and in-browser audio playback and download.",
+    impact: [
+      { number: "-60%", label: "voiceover production time" },
+      { number: "+3x", label: "content iteration speed" },
+    ],
+    stack: [
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "Tailwind CSS",
+      "PlayHT API: Play3.0-mini",
+    ],
+    links: [
+      { label: "Live", url: "https://voice-clone-tts-client.vercel.app" },
+    ],
+  },
+  {
+    title: "Unicorn Runner",
+    subtitle: "Scratch Endless Runner, Inspired by Chrome's Dino Game",
+    thumbnail:
+      "https://github.com/qaidjoharj53/Projects/raw/main/Unicorn%20Runner/Images/screenshot4.png",
+    description:
+      "A side-scrolling endless runner built entirely in Scratch, where you guide a white unicorn horse past obstacles while collecting points along the way. Features procedurally increasing difficulty, collision detection, and a live score counter.",
+    impact: [
+      { number: "500+", label: "Scratch plays" },
+      { number: "4.5★", label: "user rating" },
+    ],
+    stack: ["Scratch"],
+    links: [
+      { label: "Play", url: "https://scratch.mit.edu/projects/847385969" },
+    ],
   },
   {
     title: "GovID Extractor",
@@ -261,37 +290,34 @@ var flagshipProjects = [
     stack: ["React", "Node.js", "Express", "Tesseract.js", "Sharp"],
     links: [
       {
-        label: "GitHub",
-        url: "https://github.com/qaidjoharj53/OCR-Government-ID",
+        label: "Live",
+        url: "https://ocr-govt-id.vercel.app/",
       },
     ],
-  },
-  {
-    title: "BookFlow",
-    subtitle: "Library Management System",
-    thumbnail: "assets/images/thumbnails/bookflow.png",
-    description:
-      "Enables QR-code-based book borrowing and returns without librarian involvement. Streamlines library operations through automated check-in/check-out with real-time inventory tracking.",
-    impact: [{ number: "-50%", label: "librarian workload" }],
-    stack: ["MySQL", "Express", "React", "Node.js"],
-    links: [{ label: "Live", url: "https://book-flow.netlify.app/" }],
   },
 ];
 
 var otherProjects = [
+  {
+    title: "BookFlow",
+    description:
+      "QR-code-based library management system for automated book borrowing and returns without librarian involvement.",
+    stack: ["MySQL", "Express", "React", "Node.js"],
+    url: "https://book-flow.netlify.app/",
+  },
+  {
+    title: "Health Sync",
+    description:
+      "Hospital management system covering OPD queuing, bed availability, and patient admission tracking.",
+    stack: ["MongoDB", "React", "Node.js", "Flutter"],
+    url: "https://github.com/Hogwarts-Hackademy",
+  },
   {
     title: "Blood Bridge",
     description:
       "Donor/recipient matching platform for blood donation coordination.",
     stack: ["JavaScript", "HTML", "CSS", "PHP"],
     url: "https://github.com/qaidjoharj53/Blood-Bridge",
-  },
-  {
-    title: "Py Student Manager",
-    description:
-      "Python CLI tool for managing student records with MySQL backend.",
-    stack: ["Python", "MySQL"],
-    url: "https://github.com/qaidjoharj53/Student-Management-System",
   },
   {
     title: "Rule Minds",
@@ -314,13 +340,6 @@ var otherProjects = [
     stack: ["Python", "PyTorch", "Transformers"],
     url: "https://github.com/qaidjoharj53/CODSOFT/tree/main/codsoft_3",
   },
-  {
-    title: "Unicorn Runner",
-    description:
-      "Endless runner game inspired by Chrome's Dino Game, built in Scratch.",
-    stack: ["Scratch"],
-    url: "https://scratch.mit.edu/projects/847385969",
-  },
 ];
 
 var freelanceWork = [
@@ -337,13 +356,8 @@ var freelanceWork = [
       { number: "50%", label: "faster server response" },
       { number: "10K+", label: "projected Q1 users" },
     ],
-    stack: [
-      "Next.js",
-      "Flutter",
-      "Firebase",
-      "GCP Cloud Run",
-      "Payment Gateway",
-    ],
+    stack: ["Next.js", "Flutter", "Firebase", "GCP Cloud Run"],
+    url: "https://sanaank-web.vercel.app/",
   },
 ];
 
@@ -905,6 +919,16 @@ if (freelanceContainer) {
       stackDiv.appendChild(badge);
     });
     article.appendChild(stackDiv);
+
+    if (item.url) {
+      var link = createEl("a", "project-link", "Visit ->");
+      link.href = item.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.style.marginTop = "1rem";
+      link.style.display = "inline-flex";
+      article.appendChild(link);
+    }
 
     freelanceContainer.appendChild(article);
     observeReveal(article);
