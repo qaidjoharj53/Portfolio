@@ -279,7 +279,7 @@ var flagshipProjects = [
   },
   {
     title: "GovID Extractor",
-    subtitle: "OCR Document Processing",
+    subtitle: "OCR Document Processing and Data Extraction from Government IDs",
     thumbnail: "assets/images/thumbnails/govid-extractor.png",
     description:
       "Extracts structured data (name, document number, expiry) from government-issued ID images using Tesseract.js OCR with Sharp preprocessing. Overcame inconsistent OCR output with custom pattern matching for reliable data extraction.",
@@ -1069,32 +1069,68 @@ function buildEmailBody(name, email, message) {
   );
 }
 
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent,
+  );
+}
+
 function openGmail(name, email, message) {
   var subject = "Portfolio Contact Form Submission";
   var body = buildEmailBody(name, email, message);
-  var url =
-    "https://mail.google.com/mail/?view=cm&fs=1" +
-    "&to=" +
-    encodeURIComponent("qaidjoharytqt@gmail.com") +
-    "&su=" +
-    encodeURIComponent(subject) +
-    "&body=" +
-    encodeURIComponent(body);
-  window.open(url, "_blank");
+  var to = "qaidjoharytqt@gmail.com";
+
+  if (isMobileDevice()) {
+    // Mobile: use mailto: to open the native email app
+    var mailtoUrl =
+      "mailto:" +
+      encodeURIComponent(to) +
+      "?subject=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      encodeURIComponent(body);
+    window.location.href = mailtoUrl;
+  } else {
+    // Desktop: open Gmail web compose
+    var url =
+      "https://mail.google.com/mail/?view=cm&fs=1" +
+      "&to=" +
+      encodeURIComponent(to) +
+      "&su=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      encodeURIComponent(body);
+    window.open(url, "_blank");
+  }
 }
 
 function openOutlook(name, email, message) {
   var subject = "Portfolio Contact Form Submission";
   var body = buildEmailBody(name, email, message);
-  var url =
-    "https://outlook.live.com/mail/0/deeplink/compose" +
-    "?to=" +
-    encodeURIComponent("qaidjoharytqt@gmail.com") +
-    "&subject=" +
-    encodeURIComponent(subject) +
-    "&body=" +
-    encodeURIComponent(body);
-  window.open(url, "_blank");
+  var to = "qaidjoharytqt@gmail.com";
+
+  if (isMobileDevice()) {
+    // Mobile: use mailto: to open the native email app
+    var mailtoUrl =
+      "mailto:" +
+      encodeURIComponent(to) +
+      "?subject=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      encodeURIComponent(body);
+    window.location.href = mailtoUrl;
+  } else {
+    // Desktop: open Outlook web compose
+    var url =
+      "https://outlook.live.com/mail/0/deeplink/compose" +
+      "?to=" +
+      encodeURIComponent(to) +
+      "&subject=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      encodeURIComponent(body);
+    window.open(url, "_blank");
+  }
 }
 
 if (contactForm) {
