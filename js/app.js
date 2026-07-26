@@ -372,7 +372,7 @@ var communityWork = [
       "Real-time, 4-layer quiz web app featuring Quiz Rounds, Super 30, live Rapid Fire, and KBC-style live game with scoring, leaderboard, and referral system. Deployed on IIS Server to run live events.",
     impact: [
       { number: "+50%", label: "player engagement" },
-      { number: "15K+", label: "participants" },
+      { number: "5K+", label: "participants" },
     ],
     stack: ["MySQL", "Express", "React", "Node.js", "Socket.io", "IIS Server"],
     url: "https://kbc.udaipurtoloba.com",
