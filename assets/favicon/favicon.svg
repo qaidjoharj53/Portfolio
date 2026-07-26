@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background rounded square -->
+  <rect x="12" y="12" width="488" height="488" rx="88" ry="88" fill="#18181b"/>
+
+  <!-- Subtle border -->
+  <rect x="12" y="12" width="488" height="488" rx="88" ry="88" 
+        fill="none" stroke="#27272a" stroke-width="3"/>
+
+  <!-- QJ Text — enlarged to fill the square for small-size clarity -->
+  <text x="256" y="256" 
+        font-family="'Space Grotesk', 'Inter', system-ui, -apple-system, sans-serif" 
+        font-size="360" 
+        font-weight="700" 
+        fill="#fafafa" 
+        text-anchor="middle"
+        dominant-baseline="central"
+        letter-spacing="-18">QJ</text>
+
+  <!-- Accent dot — scaled down proportionally so it stays crisp at 16×16 -->
+  <circle cx="434" cy="434" r="22" fill="#14b8a6"/>
+</svg>
