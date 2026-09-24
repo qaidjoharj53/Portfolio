@@ -1066,15 +1066,28 @@ if (certificationsContainer) {
 }
 
 /* ============================================
-   Contact Form — Gmail / Outlook Choice
+	Contact Form — Gmail compose handoff
    ============================================ */
 
 var contactForm = document.getElementById("contact-form");
 var formStatus = document.querySelector(".form-status");
-var emailChoice = document.querySelector(".email-choice");
-var submitBtn = contactForm
-	? contactForm.querySelector('button[type="submit"]')
-	: null;
+var sendMessageLink = document.getElementById("send-message-link");
+var emailContactLink = document.getElementById("email-contact-link");
+
+function isMobileDevice() {
+	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+		navigator.userAgent,
+	);
+}
+
+function getMailtoUrl(subject, body) {
+	return (
+		"mailto:work@qaidjohar.tech?subject=" +
+		encodeURIComponent(subject) +
+		"&body=" +
+		encodeURIComponent(body)
+	);
+}
 
 function buildEmailBody(name, email, message) {
 	return (
@@ -1093,79 +1106,16 @@ function buildEmailBody(name, email, message) {
 	);
 }
 
-function isMobileDevice() {
-	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-		navigator.userAgent,
-	);
-}
-
-function openGmail(name, email, message) {
-	var subject = "Portfolio Contact Form Submission";
-	var body = buildEmailBody(name, email, message);
-	var to = "work@qaidjohar.tech";
-
-	if (isMobileDevice()) {
-		// Mobile: use mailto: to open the native email app
-		var mailtoUrl =
-			"mailto:" +
-			encodeURIComponent(to) +
-			"?subject=" +
-			encodeURIComponent(subject) +
-			"&body=" +
-			encodeURIComponent(body);
-		window.location.href = mailtoUrl;
-	} else {
-		// Desktop: open Gmail web compose
-		var url =
-			"https://mail.google.com/mail/?view=cm&fs=1" +
-			"&to=" +
-			encodeURIComponent(to) +
-			"&su=" +
-			encodeURIComponent(subject) +
-			"&body=" +
-			encodeURIComponent(body);
-		window.open(url, "_blank");
-	}
-}
-
-function openOutlook(name, email, message) {
-	var subject = "Portfolio Contact Form Submission";
-	var body = buildEmailBody(name, email, message);
-	var to = "work@qaidjohar.tech";
-
-	if (isMobileDevice()) {
-		// Mobile: use mailto: to open the native email app
-		var mailtoUrl =
-			"mailto:" +
-			encodeURIComponent(to) +
-			"?subject=" +
-			encodeURIComponent(subject) +
-			"&body=" +
-			encodeURIComponent(body);
-		window.location.href = mailtoUrl;
-	} else {
-		// Desktop: open Outlook web compose
-		var url =
-			"https://outlook.live.com/mail/0/deeplink/compose" +
-			"?to=" +
-			encodeURIComponent(to) +
-			"&subject=" +
-			encodeURIComponent(subject) +
-			"&body=" +
-			encodeURIComponent(body);
-		window.open(url, "_blank");
-	}
-}
-
-if (contactForm) {
-	contactForm.addEventListener("submit", function (e) {
-		e.preventDefault();
-
+if (sendMessageLink) {
+	sendMessageLink.addEventListener("click", function (e) {
 		var name = document.getElementById("name").value.trim();
 		var email = document.getElementById("email").value.trim();
 		var message = document.getElementById("message").value.trim();
+		var formIsValid = contactForm && contactForm.checkValidity();
 
-		if (!name || !email || !message) {
+		if (!name || !email || !message || !formIsValid) {
+			e.preventDefault();
+			if (contactForm) contactForm.reportValidity();
 			if (formStatus) {
 				formStatus.textContent = "Please fill in all fields.";
 				formStatus.classList.remove(
@@ -1178,28 +1128,35 @@ if (contactForm) {
 			return;
 		}
 
-		if (submitBtn) {
-			submitBtn.classList.add("is-hidden");
+		var subject = "Portfolio Contact Form Submission";
+		var body = buildEmailBody(name, email, message);
+		if (isMobileDevice()) {
+			this.target = "_self";
+			this.href = getMailtoUrl(subject, body);
+		} else {
+			this.target = "_blank";
+			this.href =
+				"https://mail.google.com/mail/?view=cm&fs=1&to=work%40qaidjohar.tech" +
+				"&su=" +
+				encodeURIComponent(subject) +
+				"&body=" +
+				encodeURIComponent(body);
 		}
+	});
+}
 
-		if (emailChoice) {
-			emailChoice.classList.add("is-visible");
+if (emailContactLink && isMobileDevice()) {
+	emailContactLink.target = "_self";
+	emailContactLink.href = getMailtoUrl(
+		"Portfolio Contact",
+		"Hi Qaidjohar,\n\n",
+	);
+}
 
-			var gmailBtn = emailChoice.querySelector(".email-gmail");
-			var outlookBtn = emailChoice.querySelector(".email-outlook");
-
-			if (gmailBtn) {
-				gmailBtn.onclick = function () {
-					openGmail(name, email, message);
-				};
-			}
-
-			if (outlookBtn) {
-				outlookBtn.onclick = function () {
-					openOutlook(name, email, message);
-				};
-			}
-		}
+if (contactForm) {
+	contactForm.addEventListener("submit", function (e) {
+		e.preventDefault();
+		if (sendMessageLink) sendMessageLink.click();
 	});
 }
 
